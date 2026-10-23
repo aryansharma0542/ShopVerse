@@ -1,0 +1,79 @@
+.ImageTwo {
+    width: 220px;
+    height: auto;
+}
+
+.paraTwo {
+    font-size: 17px;
+    color: #6C757D;
+}
+
+
+.ShopVerseHeading {
+    color: #f4511e;
+}
+
+.ShippingWarrenty {
+    display: flex;
+    gap: 15px;
+}
+
+.title{
+    font-size: 43px;
+}
+
+.ShoppingBag{
+    color: transparent;
+    font-size: 35px;
+    -webkit-text-stroke-color: #f4511e;
+    -webkit-text-stroke-width: 2px;
+}
+
+.ShopVerse{
+font-size: 37px;
+font-weight: 700;
+}
+
+.Verse{
+    color: #f4511e;
+}
+
+.ShippingWarrenty i {
+    font-size: 28px;
+    color: transparent;
+    -webkit-text-stroke-color: gray;
+    -webkit-text-stroke-width: 1px;
+}
+
+.LeftContent{
+position: relative;
+width: 100%;
+  min-height: 720px;
+height: 100vh;
+display: flex;
+justify-content: center;
+}
+
+.backgroundImage{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: 0;
+}
+
+.CardLeft {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+max-width: 550px;
+    margin: 0 auto;
+    padding: 30px 43px;
+}
+@media (max-width: 1199.98px){
+/* .LeftContent{
+display: none;
+} */
+}

@@ -1,0 +1,174 @@
+.PolicyImage{
+height: 60px;
+width: 60px;
+object-fit: contain;
+display: inline-block;
+}
+
+.wrapper{
+border: 1px solid #e5e7eb;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+overflow: hidden;
+}
+
+.ShippingContainer{
+padding:20px;
+}
+
+.AllShipping{
+padding: 16px 25px;
+border-right: 1px solid #e5e7eb;
+display: flex;
+align-items: center;
+height: 100%;
+}
+
+.heading{
+font-size: 18px;
+font-weight: bolder;
+margin-bottom: 5px;
+}
+
+.para{
+font-size: 14px;
+margin: 0;
+}
+
+.wrapper > .col:last-child .AllShipping{
+border-right: none;
+}
+
+/* First M */
+@media (max-width: 1199.98px) {
+
+.PolicyImage{
+height: 55px;
+width: 55px;
+}
+
+.heading{
+font-size: 15px;
+}
+
+.AllShipping{
+padding: 18px 16px;
+}
+
+.para{
+font-size: 13px;
+}
+
+.ShippingContainer{
+padding: 10px 20px;}
+}
+
+/* Second M */
+@media (max-width: 991.98px) {
+
+.ShippingContainer{
+padding: 14px 15px 10px;
+}
+
+.AllShipping{
+padding: 16px 32px;
+border-bottom: 1px solid #ddd;   
+}
+
+.policyCol:last-child .AllShipping{
+border-right: none;
+}
+
+.policyCol:nth-last-child(-n+2) .AllShipping {
+border-bottom: none;
+}
+
+.PolicyImage{
+    height: 60px;
+    width: 60px;
+}
+
+}
+
+/* Third M */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+.heading{
+margin-bottom: 3px;
+}
+
+.ShippingContainer{
+padding: 10px 12px;
+}
+
+.AllShipping{
+padding: 14px 26px;
+}}
+
+/* Fourth M */
+@media (max-width: 575px) {
+
+.AllShipping{
+flex-direction: column;
+text-align: center;
+justify-content: center;
+padding: 6px 6px;
+gap: 3px;
+border-bottom: 1px solid #e5e7eb;
+}
+
+.PolicyImage{
+    height: 50px;
+    width: 50px;
+}
+
+
+.heading {
+font-size: 15px;
+margin-bottom: 3px;
+}
+
+.para {
+font-size: 13px;
+}
+
+.ShippingContainer{
+padding: 10px 8px;
+}
+}
+
+/* Fifth M */
+@media (max-width: 400px) {
+
+.ShippingContainer {
+padding: 8px;
+}
+
+.AllShipping {
+padding: 10px 4px;
+gap: 4px;
+}
+
+.PolicyImage {
+height: 40px;
+width: 40px;
+}
+
+.heading {
+font-size: 14px;
+margin-bottom: 2px;
+}
+
+.para {
+font-size: 11.5px;
+line-height: 1.3;
+}
+}
+
+/* Sixth M */
+@media (max-width: 340px) {
+
+.CategoryHeading {
+font-size: 14px;
+}
+}

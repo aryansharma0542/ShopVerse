@@ -1,0 +1,209 @@
+
+.ShopContainer {
+    padding: 10px 20px;
+}
+
+.ShopBanner {
+    background: url(../../assets/2c8acf84-c945-4346-ac5c-db3173b1c331.png);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 260px;
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.Content {
+    display: block;
+    width: 100%;
+}
+
+.Home{
+    font-weight: 500;
+}
+
+.BreadCrumb {
+    font-size: 18px;
+}
+
+.Shop{
+    color: #f4511e;
+    font-weight: 700;
+}
+
+.ShoppingHeading {
+    font-size: 45px;
+    font-weight: 600;
+    margin: 12px 0 0;
+}
+
+.DiscoverProducts {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+
+@media (max-width:1199.98px) {
+    
+.DiscoverProducts{
+    font-size: 17px;
+}
+
+.ShoppingHeading{
+    font-size: 44px;
+}
+
+.ShopBanner {
+    background-position: 82% center;
+}
+}
+
+
+@media (max-width:991.98px) {
+    
+.ShopContainer{
+    padding: 10px 15px;
+}
+
+.DiscoverProducts{
+    font-size: 16px;
+}
+
+.ShoppingHeading{
+    font-size: 42px;
+}
+
+.BreadCrumb{
+    font-size: 17px;
+}
+
+.Content{
+    max-width: 37%;
+}
+
+.ShopBanner{
+    padding: 25px 27px;
+}
+
+}
+
+
+
+@media (max-width:767.98px) {
+    
+.ShopBanner {
+    padding: 25px;
+}
+
+.ShoppingHeading{
+    font-size: 40px;
+}
+
+.DiscoverProducts{
+    font-size: 15px;
+}
+
+.Content{
+    max-width: 30%;
+}
+
+.ShopBanner{
+    background-position: 74% center;
+}
+
+.BreadCrumb{
+    font-size: 16px;
+}
+
+.ShopContainer{
+    padding: 10px 12px;
+}
+
+}
+
+
+
+@media (max-width:575.98px) {
+    
+   .ShopBanner {
+        width: 100%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        background-position: 26% center;
+        background-size: cover;
+    }
+    
+        .Content {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+.ShoppingHeading{
+    font-size: 60px;
+}
+
+.ShopContainer{
+    padding: 10px 8px;
+}
+
+.BreadCrumb{
+    font-size: 20px;
+}
+
+.DiscoverProducts{
+    font-size: 16px;
+}
+
+}
+
+
+@media (max-width:400.98px) {
+
+        .ShopContainer {
+        padding: 10px 8px;
+    }
+    
+       .ShopBanner {
+        background-position: 39% center;
+    }
+
+    .ShoppingHeading{
+        font-size: 55px;
+    }
+
+    .BreadCrumb{
+        font-size: 18px;
+    }
+
+    .DiscoverProducts{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:340.98px) {
+
+
+
+
+    .ShopBanner {
+        background-position: 42% center;
+    }
+
+
+    .BreadCrumb {
+        font-size: 16px;
+    }
+
+    .ShoppingHeading {
+        font-size: 45px;
+    }
+
+    .DiscoverProducts {
+        font-size: 14px;
+    }
+}

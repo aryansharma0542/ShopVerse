@@ -1,0 +1,68 @@
+.NewArrivalsBanner{
+    width: 100%;
+        padding: 10px 15px 0px ;
+}
+
+.BannerContainer {
+    width: 100%;
+    height: 400px;
+
+position: relative;
+overflow: hidden;
+background-color: #f5e9db;
+    border-radius: 5px;
+}
+
+.BannerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+.BannerContent {
+       display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px;
+}
+
+.BannerContent h1 {
+    font-size: 75px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.BannerRow{
+        min-height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.NewArrivals span{
+    color: #f4511e;
+}
+.Shop{
+    color: #f4511e;
+}
+
+.BannerContent p {
+    font-size: 16px;
+    margin: 0;
+    color: #555;
+}
+
+.BreadCrumb{
+font-size: 18px;
+font-weight: 600;
+}
+
+.Discover{
+    font-size: 17px !important;
+    font-weight: 600;
+}

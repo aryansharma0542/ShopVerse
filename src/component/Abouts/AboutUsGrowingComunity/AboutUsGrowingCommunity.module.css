@@ -1,0 +1,202 @@
+.GrowingCommunityIdeas{
+color: #f4511e;
+}
+
+.OurStory{
+color: #f4511e;
+font-weight: 700;
+}
+
+.GrowingCommunity{
+font-weight: bolder;
+font-size: 34px;
+}
+
+.ShopVerseStarted{
+max-width: 85%;
+}
+
+.containerThree{
+padding: 10px 20px;
+}
+
+.BoxShopVerse{
+  display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;       /* height ~570px se ~... kam, text ke closer */
+    object-fit: cover;
+    object-position: center 65%; /* box image mein neeche-beech hai */
+    border-radius: 10px;
+}
+
+
+.ConstantlyWorKing{
+    max-width: 85%;
+}
+
+.GrowingCommunitysection{
+    padding-left: 16px;
+}
+
+.ReadMore{
+padding: 10px 20px;
+background-color: #f4511e;
+color: white;
+border-radius: 8px;
+font-size: 18px;
+border: none;
+}
+
+@media (max-width: 1199.98px) {
+    
+
+.GrowingCommunity{
+font-size: 29px;
+}
+
+.ConstantlyWorKing{
+    max-width: 95%;
+}
+.ReadMore{
+    padding: 6px 18px;
+}
+.ShopVerseStarted , .ConstantlyWorKing{
+    max-width: 96%;
+    font-size: 14px;
+}
+
+.containerThree{
+    padding: 10px 15px;
+}
+
+
+.BoxShopVerse{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.GrowingCommunitysection{
+    padding-left: 10px;
+}
+
+}
+
+
+@media (max-width:991.98px) {
+    
+    .containerThree{
+        padding: 10px 15px;
+    }
+
+    .OurStory{
+        font-size: 20px;
+    }
+
+
+.GrowingCommunity{
+    font-size: 34px;
+}
+
+.GrowingCommunitysection{
+    padding: 25px;
+border: 1px solid #e5e7eb;
+border-radius: 10px;
+box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+
+.ShopVerseStarted , .ConstantlyWorKing{
+    font-size: 19px;
+    padding: 0px 10px;
+}
+
+  .BoxShopVerse{
+    aspect-ratio: 2 / 1;
+    object-position: center 65%;
+  }
+
+.ReadMore{
+    width: 100%;
+    padding: 10px 18px;
+}
+
+}
+
+
+@media (max-width: 767px) {
+    
+
+    .GrowingCommunitysection{
+    padding: 20px;
+    }
+
+    .ShopVerseStarted , .ConstantlyWorKing{
+        font-size: 16px;
+    }
+
+    .GrowingCommunity{
+    font-size: 32px;
+}
+
+.ReadMore{
+    width: 100%;
+    padding: 9px 18px;
+}
+
+.OurStory{
+    font-size: 19px;
+}
+
+}
+
+@media (max-width: 575.98px) {
+
+    .OurStory{
+        font-size: 17px;
+    }
+    
+.containerThree{
+padding: 10px 8px;
+}
+
+.ShopVerseStarted , .ConstantlyWorKing{
+    font-size: 14px;
+    padding: 0px;
+}
+
+    .GrowingCommunity{
+    font-size: 27px;
+}
+
+.ReadMore{
+    width: 100%;
+    padding: 5px 18px;
+}
+
+  .BoxShopVerse{
+height: auto;
+width: 100%;
+  }
+
+
+}
+
+@media (max-width: 400.98px) {
+
+.OurStory{
+    font-size: 15px;
+}
+
+.GrowingCommunity{
+font-size: 21px;
+}
+
+.GrowingCommunitysection{
+    padding: 6px;
+}
+
+
+}

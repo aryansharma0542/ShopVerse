@@ -1,0 +1,367 @@
+.ProductsBox{
+border: 1px solid lightgray;
+border-radius: 6px;
+padding: 9px;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.AllProducts{
+font-size: 19px;
+font-weight: 600;
+}
+
+.SelectWrapper{
+display: inline-block;
+position: relative;
+}
+
+.RatingReview {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-wrap: nowrap;
+            overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-bottom: 8px;
+    min-width: 0;
+}
+
+.SelectBorder{
+border-radius: 5px;
+border: 1px solid lightgray;
+padding: 8px 30px 8px 10px;
+font-size: 16px;
+background-color: white;
+appearance: none;
+}
+
+.SelectIcon {
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    font-weight: 900;
+    pointer-events: none;
+    font-size: 13px;
+}
+
+.CardLinks{
+text-decoration: none;
+color: inherit;
+display: block;
+}
+
+.ProductCard{
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+border: 1px solid #e5e7eb;
+    padding: 10px;
+       position: relative;
+    width: 100%;
+    border-radius: 10px;
+      transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.CardLinks:hover .ProductCard {
+    transform: translateY(-4px);
+    border-color: #f4511e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+
+
+.ProductImageBox {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.EmptyState {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+flex: 1;
+}
+
+.EmptyState i{
+  color: #f4511e;
+  font-size: 150px;
+}
+
+.EmptyState h4{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.ImageOne{
+  width: 250px;
+  height: auto;
+}
+
+.EmptyState p{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.EmptyState small{
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.ProductImageBox img {
+       width: 100%;
+    object-fit: contain;
+    height: 135px;
+transition: transform 0.25s ease;
+}
+
+.CardLinks:hover .ProductImageBox {
+    transform: scale(1.04);
+}
+
+
+
+.ProductContent{
+  padding-top: 15px;
+}
+
+.ProductContent h5{
+  margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ProductContent h4 {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #222;
+}
+
+
+
+.price{
+  font-size: 15px;
+  font-weight: 700;
+ color: #ff4b1f;
+}
+
+.Cutprice{
+    color: gray;
+    text-decoration: line-through;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+.rating {
+    color: gold;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+
+
+
+.reviewCount {
+    color: gray;
+    font-size: 11px;
+    font-weight: 600;
+
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    padding: 4px 0px;
+    border: 1px solid #f4511e;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #f4511e;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #f4511e;
+    color: #fff;
+}
+
+
+
+
+/* Pagination */
+
+.pageBtn {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #e2e5e9;
+  background: #fff;
+  color: #343a40;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activePage {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #ff4b1f;
+  background: #ff4b1f;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(244, 81, 30, 0.2);
+}
+
+.pageBtn:not(:disabled):hover {
+  border-color: #f4511e;
+  color: #f4511e;
+  background: #fff7f3;
+}
+
+.activePage:hover {
+  background: #e94817;
+  border-color: #e94817;
+}
+
+.pageBtn:focus-visible,
+.activePage:focus-visible {
+  outline: 3px solid rgba(244, 81, 30, 0.3);
+  outline-offset: 2px;
+}
+
+.pageBtn:disabled {
+  color: #aeb4bb;
+  border-color: #e8eaed;
+  background: #f7f8f9;
+  cursor: not-allowed;
+}
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.PageNumbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.PageItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.PageEllipsis {
+  min-width: 16px;
+  color: #7b828a;
+  text-align: center;
+}
+
+.WishlistBtn {
+    position: absolute;
+    top: 4%;
+    right: 7%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.WishlistBtn:hover{
+ color: #F72555;
+    transform: scale(1.08);
+}
+
+
+.activeHeart{
+color: #F72555;
+}
+
+.WishlistBtn i {
+    font-size: 12px;
+}
+
+.Cart {
+    color: #f4511e;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.button:hover .Cart {
+    color: #fff;
+}
+
+@media (max-width:575.98px) {
+  .Pagination {
+    gap: 6px;
+  }
+
+  .PageNumbers,
+  .PageItem {
+    gap: 4px;
+  }
+
+  .pageBtn,
+  .activePage {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 8px;
+    font-size: 13px;
+  }
+}

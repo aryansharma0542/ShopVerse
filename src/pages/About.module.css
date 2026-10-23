@@ -1,0 +1,244 @@
+.AboutContainer{
+padding: 15px 30px;
+}
+
+.AboutImage{
+width: 100%;
+border-radius: 10px;
+height:auto;
+}
+
+.ContentAbout{
+position: absolute;
+top: 122px;
+left: 53px;
+}
+
+.AboutShopVerse{
+    font-size: 18px;
+    color: #f4511e;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.ShoppingMade{
+font-size: 50px;
+font-weight: bolder;
+}
+
+.text{
+    padding-right: 5px;
+}
+
+.EveryOne{
+color: #f4511e;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: #f4511e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}   
+
+.ProfitContainer{
+padding: 10px 15px;
+}
+
+.BoxShopVerse{
+width: 100%;
+overflow: hidden;
+height: auto;
+border-radius: 10px;
+}
+
+.containerThree{
+padding: 15px 15px 20px 15px;
+}
+
+.ProfitCard{
+display: flex;
+padding: 15px 40px 15px 40px;
+align-items: center;
+border-right: 1px solid #e5e7eb; 
+}
+
+.ProfitBox{
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+border: 1px solid #e5e7eb;
+}
+
+.widthProfitCard{
+height: 60px;
+width:60px;
+margin-right: 20px;
+overflow: hidden;
+}
+
+.ProfitCardImage{
+height: 100%;
+width: 100%;
+}
+
+
+.OurStory{
+color: #f4511e;
+font-weight: 700;
+}
+
+.GrowingCommunity{
+font-weight: bolder;
+font-size: 35px;
+/* padding-right: 170px; */
+}
+
+
+.ShopVerseStarted{
+padding-right: 160px;
+
+}
+
+.ConstantlyWorKing{
+    padding-right: 120px;
+}
+
+.ReadMore{
+padding: 10px 20px;
+background-color: #f4511e;
+color: white;
+/* font-weight: 700; */
+border-radius: 8px;
+font-size: 18px;
+border: none;
+}
+
+.OurValues{
+color:#f4511e;
+font-weight: 700;
+font-size: 18px;
+}
+
+.QualityPurposesBox{
+width: 60px;
+height: 60px;
+overflow: hidden;
+display: block;
+}
+
+.FourthContainer{
+padding: 10px 30px;
+background-color: #f8fafc;
+}
+
+
+.PartOfJourney{
+width: 100%;
+height: 400px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.Capital{
+border-radius: 10px;
+overflow: hidden;
+}
+
+.BreadCrumb{
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px 0px 15px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.AboutUsBannerContainer{
+padding: 10px 25px;
+}
+
+
+.FiveContainer{
+padding: 20px 30px;
+border-radius: 10px;
+}
+
+.QualityPurposesImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.WhatWeStand{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.QualityPurposesCard{
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.QualityPurposesContent{
+padding-right: 60px;
+}
+
+.heading{
+    font-size: 18px;
+font-weight: 800;
+}
+
+.ContentBox{
+position: absolute;
+top: 100px;
+left: 85px;
+}
+
+.Journey{
+font-weight: 800;
+font-size: 40px;
+}
+
+.ShopNow{
+padding: 10px 30px;
+background-color: #f4511e;
+color: #fff;
+border: none;
+border-radius: 5px;
+}
+
+
+@media (max-width:767.98px) {
+    
+    .BreadCrumb{
+        padding: 10px 12px 0px 12px;
+    margin-bottom: 0px;
+
+}
+}
+
+
+@media (max-width: 575.98px) {
+
+    .BreadCrumb{
+padding: 10px 8px 0px 8px;
+
+}
+
+}
+
+@media (max-width:400.98px) {
+    
+    .BreadCrumb{
+        font-size: 12px;
+    }
+
+
+}

@@ -1,0 +1,151 @@
+.FiveContainer{
+padding: 10px 20px 20px 20px;
+border-radius: 10px;
+}
+
+.Capital{
+border-radius: 10px;
+overflow: hidden;
+}
+
+.PartOfJourney{
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 2;      /* apni image ka width/height ratio daal */
+  object-fit: cover;
+  object-position: 80% center;
+  border-radius: 10px;
+}
+
+
+
+.Journey{
+font-weight: 700;
+font-size: 38px;
+}
+
+.ShopNow{
+padding: 10px 30px;
+background-color: #f4511e;
+color: #fff;
+border: none;
+border-radius: 5px;
+}
+
+.ContentBox{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left:3%;
+max-width: 52%;
+}
+
+
+
+@media (max-width : 1199.98px) {
+    
+
+
+    .Journey{
+        font-size: 35px;
+    }
+
+.ContentBox{
+    max-width: 49%;
+}
+
+.Joining{
+    font-size: 14px;
+}
+
+.ShopNow{
+    padding: 8px 28px;
+}
+
+
+.PartOfJourney{
+  aspect-ratio: 7 / 2;  
+  object-position: 83% center;
+}
+}
+
+@media (max-width:991.98px) {
+    
+.FiveContainer{
+    padding: 10px 15px;
+}
+
+  .Capital{
+    border-radius: 10px 10px 0 0;      /* image ke sirf upar ke corners round */
+  }
+
+  .PartOfJourney{
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .ContentBox{
+    position: static;                  /* absolute hata diya */
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 20px 24px;
+    background-color: #fcd5bd;         /* banner ke orange se match kara */
+    border-radius: 0 0 10px 10px;      /* neeche ke corners round */
+  }
+
+  .Journey{
+    font-size: 32px;
+  }
+
+  .Joining{
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+
+
+@media (max-width:767.98px) {
+    
+
+    .Joining{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width:575px) {
+    
+.Joining{
+    font-size: 14px;
+}
+
+.Journey{
+    font-size: 28px;
+}
+
+.ContentBox{
+    padding: 10px 15px;
+}
+
+}
+
+
+@media (max-width:400.98px) {
+
+.Journey{
+    font-size: 20px;
+}    
+
+.Joining{
+    font-size: 12px;
+}
+
+.ShopNow{
+    width: 100%;
+}
+}

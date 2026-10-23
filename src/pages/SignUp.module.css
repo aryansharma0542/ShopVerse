@@ -1,0 +1,173 @@
+.ContainerFluid {
+    background-image: url('../assets/2315b729-1248-4b27-896f-8aaf23c205dd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Wrapper{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Card{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ImageOne{
+    width: 150px;
+    height: auto;
+}
+
+.AllreadyAccountOne{
+    font-size: 13px;  
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.LoginOne{
+    color: #f4511e;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.CreateAccount{
+font-size: 25px;
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.formGroup label{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.inputBox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 15px;
+}
+
+.inputBox input{
+    display: block;
+    width: 100%;
+    padding: 6px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.inputBox i{
+    background-color: white;
+    color: #999;
+}
+
+.Terms {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.Terms input {
+    accent-color: #f4511e;
+}
+
+.Terms label {
+    color: #333;
+}
+
+.Terms a {
+    color: #f4511e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.SignUpButton{
+    width: 100%;
+    border: none;
+    background-color: #ff5a00;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.Or{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.Or span{
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.Or p {
+    font-size: 10px;
+    color: #888;
+}
+
+.AllreadyAccountTwo{
+font-size: 15px;
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+color: gray;
+}
+
+.LoginTwo{
+color: #f4511e;
+font-weight: 700;
+font-size: 15px;
+text-decoration: none;
+}
+
+.para{
+font-size: 14px;
+}
+
+.ShopVerseHeading{
+color: #f4511e;
+}
+
+.SocialButtons{
+display: flex;
+gap: 10px;
+}
+
+.SocialButtons button{
+    width: 50%;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    background-color: white;
+    font-size: 14px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 9px;
+}

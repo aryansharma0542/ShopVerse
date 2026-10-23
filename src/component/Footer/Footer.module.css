@@ -1,0 +1,129 @@
+.ImageOne{
+    height: auto;
+    width: 170px;
+}
+
+.FooterContainer{
+margin: 15px 45px 0px 45px;
+}
+
+
+.Para{
+    font-size: 14px;
+padding-right: 0px;
+}
+
+.SocialMediaIcons a{
+text-decoration: none;
+color: black;
+}
+
+.footerLinksOne a{
+text-decoration: none;
+display: block;
+font-size: 14px;
+margin-bottom: 4px;
+color: black;
+}
+
+.AcceptThis{
+font-weight: bold;
+}
+
+.payementsLogo{
+    height: auto;
+    background-color: white;
+    border-radius: 4px;
+    width: 90px;
+}
+
+.footer{
+    background-color: #FEF3ED;
+    /* margin: 10px 30px 0px; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.AllLabel{
+font-size: 16px;
+font-weight: 700;
+}
+
+@media (max-width: 575px) {
+
+    .FooterContainer {
+        margin: 24px 14px 16px;
+    }
+
+    .ImageOne {
+        width: 120px;
+        height: auto;
+    }
+
+
+    .Para {
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 8px 0 12px;
+    }
+
+    .SocialMediaIcons {
+        gap: 18px !important;
+    }
+
+    .SocialMediaIcons i {
+        font-size: 20px;
+    }
+
+
+      .AllLabel {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    /* Links */
+    .footerLinksOne {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footerLinksOne a,
+    .footerLinksOne p {
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;   /* email/address 2 column me na kate */
+        margin: 0;
+    }
+
+
+     .AcceptThis {
+        font-size: 19px;
+        text-align: center;
+        margin: 8px 0 10px;
+    }
+
+    .payementsLogo {
+        width: 60px;
+        height: auto;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .FooterContainer {
+        margin: 16px 12px 8px;
+    }
+
+    .footerLinksOne a,
+    .footerLinksOne p {
+        font-size: 12px;
+    }
+
+    .AllLabel {
+        font-size: 14px;
+    }
+}

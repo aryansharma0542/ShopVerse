@@ -1,0 +1,222 @@
+.Dealsontainer{
+padding: 10px 20px 10px 20px;
+}
+
+.Banner{
+background: url(../../assets/4822f029-58eb-4af7-89c3-72e12c8cf89d.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 15px 0px;
+}
+
+.LimitedDeals{
+text-transform: uppercase;
+color: #f4511e;
+font-weight: 900;
+}
+
+.big{
+font-weight: 700;
+font-size: 36px;
+}
+
+.Saving{
+color: #f4511e;
+}
+
+
+.GrabDeal{
+  font-size: 16px;
+  color: gray;
+  max-width: 100%;
+}
+
+
+.DealsButton{
+    border: none;
+    background-color: #f4511e;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.DealEnd{
+font-size: 20px;
+font-weight: 600;
+}
+
+.TimeBox{
+    padding: 10px 12px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.AlarmAlert{
+font-size: 40px;
+ color: #f4511e;
+        padding-right: 5px;
+        color: transparent;
+        -webkit-text-stroke-color: #f4511e;
+        -webkit-text-stroke-width: 2px;
+        font-weight: 900;
+}
+
+.TimeBox h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1199.98px){
+  .TimeBox{ padding: 8px 10px; }
+  .TimeBox h4{ font-size: 22px; }
+  .TimeBox span{ font-size: 12px; }
+  .DealEnd{ font-size: 19px; }
+
+  .big{
+    font-size: 34px;
+  }
+
+  .LimitedDeals{
+    font-size: 15px;
+  }
+
+.GrabDeal{
+    max-width: 82%;
+}
+.Banner{
+  background-position: right;
+
+}
+}
+
+
+@media (max-width: 991.98px){
+
+  .Dealsontainer{
+    padding: 10px 15px;
+  }
+  
+.Numbers{
+  font-size: 20px !important;
+}
+
+  .Banner{
+  background-position: left;
+}
+
+  /* .Banner
+    background-position: right center;   
+    /* padding: 10px 0; */
+  /* }  */
+
+    .TimerCol{
+    max-width: 60%;           
+    padding: 10px 0 20px !important;
+  }
+
+  .LeftContent{
+    max-width: 100%;                   
+  }
+
+.LimitedDeals{
+font-size: 13px; 
+}
+
+.big{ 
+font-size: 28px; 
+}
+
+.GrabDeal{ font-size: 13px; 
+max-width: 100%;
+}
+
+  .DealsButton{ padding: 7px 14px; }
+
+  .DealEnd{ font-size: 16px; }
+
+  .TimeBox{ padding: 5px 8px; }
+  .TimeBox h4{ font-size: 22px; }
+  .TimeBox span{ font-size: 12px; }
+}
+
+
+@media (max-width:767.98px) {
+  .LeftContent{
+    text-align: center;
+  }
+
+  .LimitedDeals{
+    font-size: 18px;
+  }
+
+  .big{
+    font-size: 40px;
+  }
+
+  .GrabDeal{
+    font-size: 14px;
+  }
+
+  .DealsButton{
+    padding: 8px 16px;
+  }
+
+.AlarmAlert{
+font-size: 45px;
+}
+
+
+.DealEnd{
+font-size: 22px;
+font-weight: 700;
+}
+
+.TimeBox{
+  padding: 6px 12px;
+}
+
+
+.Numbers{
+  font-size: 24px !important;
+}
+  
+.Dealsontainer{
+  padding: 10px 12px;
+}
+
+}
+
+
+@media (max-width:575.98px) {
+  
+.Dealsontainer{
+padding: 10px 8px;  
+}
+
+}
+
+
+@media (max-width:400.98px) {
+  
+.big{
+  font-size: 34px;
+}
+
+
+.LimitedDeals{
+  font-size: 16px;
+}
+
+.DealsButton{
+  padding: 7px 14px;
+}
+
+
+.DealEnd{
+  font-size: 20px;
+}
+}

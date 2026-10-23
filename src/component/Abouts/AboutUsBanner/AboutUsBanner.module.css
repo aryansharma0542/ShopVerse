@@ -1,0 +1,201 @@
+.AboutUsBannerContainer{
+  padding: 10px 20px;
+}
+
+.AboutImage{
+   display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 5;
+    max-height: 460px;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 10px
+}
+
+.AboutShopVerse{
+    font-size: 18px;
+    color: #f4511e;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.ContentAbout {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+     max-width: 52%;       
+    transform: translateY(-50%);
+}
+
+.ShoppingMade{
+font-size: 48px;
+font-weight: bolder;
+}
+
+.AtShopVerse{
+font-size: 15px;
+color: gray;
+max-width: 60%;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: #f4511e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+} 
+
+.EveryOne{
+color: #f4511e;
+}
+
+@media (max-width:1198px) {
+
+.AboutShopVerse{
+    font-size: 16px;
+}
+
+.AtShopVerse{
+    font-size: 14px;
+    max-width: 70%;
+}
+
+.ShoppingMade{
+font-size: 42px;
+}
+}
+
+@media (max-width: 991.98px) {
+
+.AboutShopVerse{
+    font-size: 14px;
+}
+
+.ShoppingMade{
+    font-size: 36px;
+}
+
+.AtShopVerse{
+    font-size: 12px;
+    max-width: 75%;
+}
+
+.AboutUsBannerContainer{
+    padding: 10px 15px;
+}
+
+.btn{
+    padding: 7px 19px;
+}
+
+.ContentAbout {
+    left: 4%;
+}
+}
+
+@media (max-width: 767.98px) {
+
+    .AboutUsBannerContainer{
+        padding: 10px 12px;
+    }
+
+ .AboutShopVerse{
+    font-size: 12px;
+}   
+
+    .AboutImage{
+        aspect-ratio: 16 / 7;
+        object-position: 29% center;
+    }
+
+    .AtShopVerse{
+        max-width: 89%;
+    }
+
+    .ContentAbout{
+        max-width: 56%;
+        left: 5%;
+    }
+
+.ShoppingMade{
+    font-size: 31px;
+}
+
+.btn{
+    padding: 6px 16px;
+}
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .AboutUsBannerContainer{
+        padding: 10px 8px;
+    }
+
+    .AboutImage{
+        aspect-ratio: 22 / 9;
+        object-position: 3% center;
+    }
+
+    .AboutShopVerse{
+        font-size: 11px;
+    }
+
+.btn{
+display: none;
+}
+
+.ShoppingMade{
+    font-size: 21px;
+}
+
+.AtShopVerse{
+    font-size: 11px;
+}
+
+}
+
+
+@media (max-width: 400.98px) {
+
+.AboutUsBannerContainer{
+    padding: 5px 8px 5px 8px;
+}
+
+.AtShopVerse{
+    display: none;
+}
+.AboutImage{
+    border-radius: 8px;
+}
+
+.btn{
+    display: block;
+    padding: 5px 8px;
+    font-size: 13px;
+}
+
+.ShoppingMade{
+    font-size: 18px;
+}
+}
+
+
+@media (max-width: 340.98px) {
+
+
+
+.ShoppingMade{
+    font-size: 16px;
+}
+
+.btn{
+    display: block;
+    padding: 4px 7px;
+    font-size: 12px;
+}
+
+}

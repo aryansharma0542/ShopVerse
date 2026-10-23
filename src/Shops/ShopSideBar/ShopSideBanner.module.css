@@ -1,0 +1,137 @@
+.CategoryBox{
+  padding: 8px;
+  border-radius: 6px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+}
+
+.CategoryItems input[type="radio"] {
+    width: 13px;
+    height: 13px;
+       /* accent-color: #f4511e; */
+       /* color: blueviolet; */
+       /* background-color: gray; */
+       border: 1px solid gray;
+}
+
+.CategoryOption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OpenCategoryMargin{
+margin-bottom: 7px;
+}
+
+/* .Item{
+  color: gray;
+  font-size: 14px;
+} */
+
+.ClosedCategoryMargin{
+margin-bottom: 10px;
+padding-bottom: 5px;
+border-bottom: 1px solid lightgray;
+}
+
+.Category{
+font-weight: 600;
+font-size: 18px;
+}
+
+.Icons{
+font-weight: 800;
+}
+
+.CategoryList{
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+
+.CategoryItems{
+display: flex;
+justify-content: space-between;
+align-items: end;
+}
+
+.RangeOption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OpenRangeMargin{
+margin-bottom: 7px;
+/*  */
+}
+
+.ClosedRanegMargin{
+padding-bottom: 5px;
+border-bottom: 1px solid lightgray;
+margin-bottom: 10px;
+}
+
+.PriceRange{
+width: 100%;
+ accent-color: #ff4b1f;
+  cursor: pointer;
+}
+
+
+
+.Rating{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.BrandsOption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ClosedBrandMargin{
+margin-bottom: 10px !important;
+padding-bottom: 5px;
+border-bottom: 1px solid lightgray;
+}
+
+
+.CloseBrand {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.OpenBrand{
+  margin-bottom: 7px;
+}
+
+.ClearFilter{
+width: 100%;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border: 1px solid #ff4b1f;
+    background: white;
+    color: #ff4b1f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.SideBarLogoImage{
+      margin-top: auto;
+    text-align: center;
+}
+
+.ImageOne {
+    width: 100%;
+    height: auto;
+    display: block;
+}

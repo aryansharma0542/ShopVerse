@@ -1,0 +1,257 @@
+.ShopBtn i {
+  color: #fff;
+}
+
+
+.ShippingContainer{
+padding: 10px 20px;
+}
+
+
+.ImageBannerTwo{
+  background: url(../../assets/9554ebf7-2646-4f33-aa27-4c2958fc2853.png);
+    width: 100%;
+    background-position: 90%;
+    min-width: 0;
+    min-height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.ShopBtn {
+  padding: 10px 20px;
+  background-color: #f4511e;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+}
+
+.Discount{
+font-size: 20px;
+}
+
+.FlashDeals{
+font-weight: 800;
+}
+
+
+
+
+
+.ImageBannerOne{
+  background: url(../../assets/a6bbd16d-98d9-4ba5-840e-b060d4e45bf7.png);
+    width: 100%;
+    min-width: 0;
+    min-height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-position: 90%;
+}
+
+.BannerContainer{
+padding: 10px 20px;
+}
+
+.Content {
+    width: 50%;
+    font-weight: 800;
+}
+
+.FlashDeals{
+  font-size: 25px;
+}
+
+
+@media (max-width:1199.98px) {
+  
+.ShopBtn{
+  padding: 8px 16px;
+}
+
+
+
+.ImageBannerOne , 
+.ImageBannerTwo{
+  background-position: 80% center;
+    padding: 8px 16px;
+}
+
+.FlashDeals{
+  font-size: 20px;
+}
+
+.ShopBtn{
+  padding: 6px 12px;
+}
+
+.Discount{
+  font-size: 17px;
+}
+
+}
+
+
+@media (max-width:991.98px) {
+  
+.BannerContainer{
+  padding: 10px 15px;
+}
+
+.ImageBannerOne{
+  background-position: 71% center;
+}
+
+.ImageBannerTwo{
+  background-position: 57% center;
+}
+
+.FlashDeals{
+  font-size: 17px;
+}
+
+.Discount{
+  font-size: 15px;
+}
+
+.ShopBtn{
+  font-size: 13px;
+}
+
+}
+
+
+@media (max-width:767.98px) {
+  
+.BannerContainer{
+  padding: 10px 12px;
+}
+
+.ImageBannerOne{
+  background-position: 87% center;
+}
+
+
+.ImageBannerTwo{
+  background-position: 88% center;
+}
+
+.FlashDeals{
+  font-size: 22px;
+}
+
+.Discount{
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* .ImageBannerOne , 
+.ImageBannerTwo{
+background-position: 10% center;
+} */
+
+}
+
+@media (max-width:575.98px) {
+  
+.BannerContainer{
+  padding: 10px 8px;
+}
+
+.FlashDeals{
+  font-size: 20px;
+}
+
+.Discount{
+  font-size: 15px;
+}
+
+.ImageBannerOne{
+  background-position: 68% center;
+  padding: 9px 14px;
+}
+
+.ImageBannerTwo{
+  background-position: 49% center;
+}
+
+}
+
+
+@media (max-width:400.98px) {
+  
+.FlashDeals{
+font-size: 16px;
+font-weight: 700;
+}
+
+.Discount{
+font-size: 14px;
+}
+
+.ImageBannerOne,
+.ImageBannerTwo{
+  padding: 8px;
+}
+
+.ImageBannerOne{
+  background-position: 66% center;
+}
+
+.ImageBannerTwo{
+  background-position: 53% center;
+}
+
+.ShopBtn{
+padding: 5px 10px;
+font-size: 12px;
+}
+}
+
+
+@media (max-width:340.98px) {
+  
+.ImageBannerOne{
+  background-size: cover;
+  background-position: 92% center;
+  padding: 5px 9px;
+  align-items: start;
+}
+
+
+.Content h3 {
+  display: none;
+}
+
+.Content{
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.FlashDeals{
+font-size: 16px;
+}
+
+.PercentOFF{
+color: #f4511e;
+}
+
+.Discount{
+font-size: 15px;
+}
+
+.ImageBannerTwo{
+  background-position: 89% center;
+    padding: 6px 9px;
+  align-items: start;
+}
+
+}
