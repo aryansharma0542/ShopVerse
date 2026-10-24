@@ -139,12 +139,15 @@ aria-controls="navbarScroll" className={Styles.mobileToggle}><i className={`fa-s
 </>
 ) : (
 <>
+{/* First */} 
 <div className={`d-flex justify-content-between align-items-center pt-lg-2 pb-lg-4 ${Styles.Opencartlist}`}>
 <h5 className={`mb-lg-0 ${Styles.CartLength} `}>
 <img src={CartImage} className={Styles.cartImageThree} alt="" />
 <i className={`fa-solid fa-cart-shopping ${Styles.cart}`}></i>({cart.length})</h5>
 <i onClick={() => SetShowCart(false)} className={`fa-regular fa-circle-xmark ${Styles.CrossCart}`}></i>
 </div>
+
+{/* Second */}
 <div className={Styles.cartProducts}>
 {cart.map((item) => (
 <div key={item.id} className={Styles.cartProduct}>
@@ -185,6 +188,8 @@ dispatch({
 </div>
 ))}
     </div>
+
+    {/* Three */}
     <div className={Styles.cartTotal}>
     <p className='mb-lg-0'>Estimated Total</p>
     <h5>${TotalPrice.toFixed(2)}</h5>

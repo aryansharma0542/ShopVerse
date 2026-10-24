@@ -33,6 +33,13 @@ const handleClearFilters = () => {
 
 return(
 <div className={Style.CategoryBox}>
+<div className={Style.FilterRows}>
+
+{/* Row */}
+<div className={Style.FilterRow}>
+
+{/* Column  1 */}
+<div className={Style.FilterColumn}> 
 {/* Part-One */}
 <div className={`${Style.CategoryOption} ${OpenCategory ? Style.OpenCategoryMargin : Style.ClosedCategoryMargin}`} onClick={()=> SetOpenCategory(!OpenCategory)}>
 <h4 className={`${Style.Category} mb-lg-0`}>Category</h4>
@@ -55,7 +62,9 @@ onChange={()=> SetSelectedCategory(product.category)}
 ))}
 </div>
 </Collapse>
+    </div>
 
+ <div className={Style.FilterColumn}>
 {/* Part-Two */}
 <div className={`${Style.RangeOption} ${OpenRange ? Style.OpenCategoryMargin : Style.ClosedCategoryMargin}`} onClick={() => SetRange(!OpenRange)}>
 <h4 className={`${Style.Category} mb-lg-0`}>Price Range</h4>
@@ -76,7 +85,11 @@ onChange={(e) =>  SetMinPrice(Number(e.target.value))}
 </div>
 </div>
 </Collapse>
+    </div>
+</div>
 
+ <div className={Style.FilterRow}>
+<div className={Style.FilterColumn}>
 {/* Part - Three */}
 <div className={`${Style.BrandsOption} ${openBrand ? Style.OpenBrand : Style.ClosedBrandMargin}`} onClick={()=> SetOpenBrand(!openBrand)}>
 <h4 className={`${Style.Category} mb-lg-0`}>Brands</h4>
@@ -94,13 +107,18 @@ name='brand'
 checked={selectedBrand === brand.category}
 onChange={()=> SetSelectedBrand(brand.category)}
 />
-<span>{brand.items}</span>
+<span className={Style.Item}>({brand.items})</span>
 </div>
 ))}
 </div>
 </Collapse>
+    </div>
 
+<div className={Style.FilterColumn}>
 <button onClick={handleClearFilters} type='button' className={Style.ClearFilter}>Clear Filters</button>
+</div>
+</div>
+</div>
 </div>
 )
 }

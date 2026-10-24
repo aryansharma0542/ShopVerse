@@ -100,7 +100,7 @@ return(
 <ShopBanner />
 <div className={Style.ShopContainer}>
 <Row className="g-2 m-0">
-<Col lg={2} className='mt-lg-0 ps-lg-0'>
+<Col lg={2} className='mt-lg-0 mb-md-3 mb-lg-0 ps-lg-0'>
   <ShopSideBar
     selectedCategory={selectedCategory}
     SetSelectedCategory={SetSelectedCategory}

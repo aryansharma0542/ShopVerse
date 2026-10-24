@@ -58,7 +58,7 @@ const changePage = (page) => {
 return(
 <div className={Style.ProductContainer}> 
 <div className={Style.ProductsBox}>
-<div className='d-flex justify-content-between mb-lg-3 align-items-center'>
+<div className='d-flex justify-content-between mb-md-3 mb-lg-3 align-items-center'>
 <h3 className={`${Style.AllProducts} mb-lg-0`}>All Products</h3>
 <div className={Style.SelectWrapper}>
 <select name="" id="" className={`${Style.SelectBorder}`} value={sortOrder} onChange={(e) => SetSortOrder(e.target.value)}>
