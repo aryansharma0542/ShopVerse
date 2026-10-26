@@ -43,23 +43,42 @@ const indexOfLastProduct = currentPage * productsPerPage;
 const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
 const currentProducts = searchProducts.slice(indexOfFirstProduct,indexOfLastProduct);
 const totalPages = Math.ceil(searchProducts.length / productsPerPage)
-const visiblePages = totalPages <= 5
-  ? Array.from({ length: totalPages }, (_, index) => index + 1)
-  : [...new Set([
-      1,
-      ...(currentPage > 2 ? [currentPage - 1] : []),
-      currentPage,
-      ...(currentPage < totalPages - 1 ? [currentPage + 1] : []),
-      totalPages,
-    ])].sort((a, b) => a - b);
-const changePage = (page) => {
-  setCurrentPage(Math.min(Math.max(page, 1), totalPages));
-};
+
+const getSiblingCount = () => {
+    const w = window.innerWidth;
+    if (w >= 992) return 2;   // laptop
+    if (w >= 576) return 1;   // tablet
+    return 0;                 // mobile
+  };
+
+  const [siblings, setSiblings] = useState(getSiblingCount());
+
+  useEffect(() => {
+    const onResize = () => setSiblings(getSiblingCount());
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  const visiblePages = (() => {
+    if (totalPages <= 5) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    const pages = new Set([1, totalPages]);
+    const start = Math.max(currentPage - siblings, 1);
+    const end = Math.min(currentPage + siblings, totalPages);
+    for (let i = start; i <= end; i++) pages.add(i);
+    return [...pages].sort((a, b) => a - b);
+  })();
+
+  const changePage = (page) => {
+    setCurrentPage(Math.min(Math.max(page, 1), totalPages));
+  };
+
 return(
 <div className={Style.ProductContainer}> 
 <div className={Style.ProductsBox}>
-<div className='d-flex justify-content-between mb-md-3 mb-lg-3 align-items-center'>
-<h3 className={`${Style.AllProducts} mb-lg-0`}>All Products</h3>
+<div className='d-flex justify-content-between mb-3 mb-md-3 mb-lg-3 align-items-center'>
+<h3 className={`${Style.AllProducts} mb-0 mb-lg-0`}>All Products</h3>
 <div className={Style.SelectWrapper}>
 <select name="" id="" className={`${Style.SelectBorder}`} value={sortOrder} onChange={(e) => SetSortOrder(e.target.value)}>
 <option value="default">Sort By : Default</option>
@@ -83,7 +102,7 @@ return(
   <>
 <Row className='g-3'>
 {currentProducts.map((product , index) => (
-<Col lg={2} key={index}>
+<Col lg={2} md={3} xs={6} key={product.id} className=''>
 <Link to={`/DetailPage/${product.id}`} className={Style.CardLinks}>
 <div className={Style.ProductCard}>
 <button onClick={(e) => {
@@ -94,16 +113,16 @@ return(
 <i className={`fa-heart ${wishlist.some((item) => item.id === product.id) ? `fa-solid ${Style.activeHeart}`: "fa-regular"}`}></i>
 </button>
 <div className={Style.ProductImageBox}>
-<img src={product.image} alt="" />
+<img className={Style.ProductImage} src={product.image} alt="" />
 </div>
 <div className={Style.ProductContent}>
-<h5 className='mb-lg-1'>{product.productName}</h5>
+<h5 className={`mb-lg-1 ${Style.ProductName}`}>{product.productName}</h5>
 <h4 className={`mb-lg-0 ${Style.category}`}>{product.category}</h4>
 <div className={`d-flex gap-2 align-items-center ${Style.oldprice}`}>
 <span className={`${Style.price}`}>₹{product.price}</span>
 <span className={Style.Cutprice}>₹{product.Cutprice}</span>
 </div>
-<div className={` ${Style.RatingReview} d-flex gap-lg-1 mb-lg-1`}>
+<div className={` ${Style.RatingReview} mb-1 d-flex gap-lg-1 mb-lg-1`}>
 <span className={Style.rating}>
 <i className={`fa-solid fa-star`}></i>
 <i className={`fa-solid fa-star`}></i>

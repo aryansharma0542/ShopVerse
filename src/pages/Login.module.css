@@ -1,97 +1,121 @@
-.LeftCol{
-min-height: 100vh;
-padding: 0 !important;
+.loginContainer {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
-.RightCol{
-min-height: 100vh;
-padding: 20px !important;
-display: flex;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
-overflow-y: auto;
+.loginContainer > :global(.row) {
+    min-height: 100vh;
+    min-height: 100svh;
 }
 
-.card{
+.LeftCol {
+    min-width: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 0 !important;
+}
+
+.RightCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 24px !important;
+    box-sizing: border-box;
+}
+
+.card {
     width: 100%;
     max-width: 500px;
+    min-width: 0;
     padding: 30px;
     border-radius: 12px;
     background-color: white;
-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
-
-.Style{
+.Style {
     color: #ff5a00;
 }
 
-.logo{
+.logo {
+    margin-bottom: 8px;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
 }
 
-.logo span{
+.logo span {
     color: #ff5a00;
 }
 
-
-.WelComeback{
+.WelComeback {
+    margin-bottom: 5px;
     text-align: center;
     font-weight: 900;
     font-size: 35px;
-    margin-bottom: 5px;
 }
 
-.subTitle{
-text-align: center;
-font-size: 14px;
-color: #777;
-margin-bottom: 20px;
+.subTitle {
+    margin-bottom: 20px;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
 }
-
 
 .formGroup {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    min-width: 0;
 }
 
-.formGroup label{
+.formGroup label {
+    display: block;
+    margin-bottom: 4px;
     font-size: 15px;
     font-weight: 600;
-    display: block;
-    margin-bottom: 2px;
 }
 
-.formGroup input{
+.formGroup input {
     display: block;
     width: 100%;
-    padding: 6px 5px;
+    min-width: 0;
+    padding: 8px 5px;
+    border: none;
     border-radius: 5px;
-border: none;
-outline: none;
+    outline: none;
+    box-sizing: border-box;
 }
 
-.inputBox{
+.inputBox {
     display: flex;
-    gap: 10px;
     align-items: center;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 0px 15px;
+    gap: 10px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.inputBox i{
+.inputBox i {
+    flex: 0 0 auto;
     color: #999;
 }
 
-.forget{
-text-align: right;
-font-weight: 600;
-font-size: 14px;
-color: #ff5a00;
-    margin-bottom: 11px
+.forget {
+    margin-bottom: 12px;
+    color: #ff5a00;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }
 
 .forget a {
@@ -100,68 +124,210 @@ color: #ff5a00;
     font-size: 12px;
 }
 
-.LoginBtn{
+.LoginBtn {
     width: 100%;
+    padding: 10px 20px;
     border: none;
+    border-radius: 10px;
     background-color: #ff5a00;
     color: white;
-    border-radius: 10px;
-    padding: 8px 20px;
 }
 
-.Or{
+.Or {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
-.Or span{
+.Or span {
     flex: 1;
     height: 1px;
     background: #ddd;
 }
 
 .Or p {
-    font-size: 10px;
+    margin-bottom: 0;
     color: #888;
+    font-size: 10px;
 }
 
-.SocialButtons{
-display: flex;
-gap: 10px;
-}
-
-.SocialButtons button{
-    width: 50%;
-    font-size: 12px;
-    border: 1px solid #ddd;
-    font-weight: 500;
-    background-color: white;
-    font-size: 14px;
-    padding: 8px;
+.SocialButtons {
     display: flex;
-    justify-content: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.SocialButtons button {
+    display: flex;
     align-items: center;
-    cursor: pointer;
-    gap: 5px;
+    justify-content: center;
+    gap: 6px;
+    width: 50%;
+    min-width: 0;
+    padding: 9px 8px;
+    border: 1px solid #ddd;
     border-radius: 9px;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    overflow-wrap: anywhere;
 }
 
-.SignUpClk{
-color: #ff5a00;
-font-weight: 700;
+.SocialButtons svg {
+    flex: 0 0 auto;
 }
 
-.SignUP{
-text-align: center;
-text-decoration: none;
-color: inherit;
-font-size: 15px;
-color: #777;
-margin-top: 20px;
-margin-bottom: 0;
+.SignUpClk {
+    color: #ff5a00;
+    font-weight: 700;
 }
 
+.SignUP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #777;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
 
+@media (max-width: 1199.98px) {
+    .logo {
+        font-size: 31px;
+    }
 
+    .WelComeback {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .LeftCol {
+        display: none !important;
+    }
+
+    .RightCol {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 24px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .RightCol {
+        padding: 20px !important;
+    }
+
+    .card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .RightCol {
+        padding: 16px !important;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .WelComeback {
+        font-size: 28px;
+    }
+
+    .subTitle {
+        font-size: 13px;
+    }
+
+    .SocialButtons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .SocialButtons button {
+        width: 100%;
+        min-height: 42px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .RightCol {
+        padding: 12px !important;
+    }
+
+    .card {
+        padding: 22px 16px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .WelComeback {
+        font-size: 25px;
+    }
+
+    .inputBox {
+        gap: 8px;
+        padding: 0 10px;
+    }
+
+    .formGroup input {
+        font-size: 14px;
+    }
+
+    .SignUP {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 340.98px) {
+    .RightCol {
+        padding: 8px !important;
+    }
+
+    .card {
+        padding: 20px 12px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .WelComeback {
+        font-size: 23px;
+    }
+
+    .subTitle {
+        font-size: 12px;
+    }
+
+    .formGroup label {
+        font-size: 14px;
+    }
+
+    .LoginBtn {
+        padding: 9px 12px;
+    }
+
+    .SignUP {
+        font-size: 12px;
+    }
+}

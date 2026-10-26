@@ -24,10 +24,10 @@ description={<>Don't worry! It happens to everyone. Enter your email and we'll h
     <div className={`${Style.logo} d-flex mb-lg-1 align-items-center justify-content-center`}>
         <img src={ImageOne} className={`${Style.ImageOne}`}  alt="" />
     </div> 
-    <di className="text-center">
+    <div className="text-center">
 <h2 className={`${Style.ForgetAccount} fw-bold mb-lg-2`}>Forget Password</h2>
 <p className={`text-secondary ${Style.paraThree}`}>Enter your email address and we'll send you a link to reset your password</p>
-    </di>
+    </div>
 <form action="">
 {/* Email Address */}
 <div className={`${Style.formGroup} mb-lg-4`}>

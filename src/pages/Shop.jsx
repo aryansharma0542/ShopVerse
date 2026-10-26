@@ -13,23 +13,12 @@ import { SearchContext } from '../Context/SearchContext';
 
 function Shop(){
 
-  const{search} = useContext(SearchContext);
-
-
+const{search} = useContext(SearchContext);
 const {category} = useParams();
 const [selectedCategory , SetSelectedCategory] = useState("");
 const[sortOrder , SetSortOrder] = useState("default");
 const[MinPrice  , SetMinPrice] = useState(0); 
 const[selectedBrand , SetSelectedBrand] = useState("")
-
-useEffect(() => {
-  if (search && search.trim() !== "") {
-    SetSelectedCategory("");
-    SetSelectedBrand("");
-    SetMinPrice(0);
-  }
-}, [search]);
-
 
 // Part 1 : 
 useEffect(() => {
@@ -40,51 +29,23 @@ SetSelectedCategory(matchedCategory ? matchedCategory.category : "");
 SetSelectedCategory("");
 }
 }, [category]);
-
 // Part 2 
 const maxPrice = 5000;
-console.log("Selected Category:", selectedCategory);
-console.log("Selected Brand:", selectedBrand);
-console.log("First Product:", AllProducts[0]);
+const normalizedSearch = search.trim().toLowerCase();
+const filteredProducts = AllProducts.filter((product) => {
+const matchesSearch =
+  product.productName?.toLowerCase().includes(normalizedSearch) ||
+  product.mainCategory?.toLowerCase().includes(normalizedSearch) ||
+  product.category?.toLowerCase().includes(normalizedSearch) ||
+  false;
+  const matchesCategory = selectedCategory === "" ||
+    product.mainCategory?.toLowerCase() === selectedCategory.toLowerCase();
+  const matchesBrand = selectedBrand === "" ||
+    product.brand?.toLowerCase() === selectedBrand.toLowerCase();
+  const matchesPrice = product.price >= MinPrice && product.price <= maxPrice;
 
-
-
-
-
-// const filteredProducts = 
-// (selectedCategory === "" ? AllProducts : AllProducts.filter((product)=> product.mainCategory?.toLowerCase() === selectedCategory.toLowerCase()))
-// .filter((product) => product.price >= MinPrice && product.price <= maxPrice).filter((product) =>
-//     selectedBrand === "" ||
-//     product.brand?.toLowerCase() === selectedBrand.toLowerCase()
-//   );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const filteredProducts = 
-(selectedCategory === "" ? AllProducts : AllProducts.filter((product)=> product.mainCategory?.toLowerCase() === selectedCategory.toLowerCase()))
-.filter((product) => product.price >= MinPrice && product.price <= maxPrice).filter((product) =>
-    selectedBrand === "" ||
-    product.brand?.toLowerCase() === selectedBrand.toLowerCase()
-  );
-  console.log("Selected Category:", selectedCategory);
-console.log("Selected Brand:", selectedBrand);
-console.log("First Product:", AllProducts[0]);
+  return matchesSearch && matchesCategory && matchesBrand && matchesPrice;
+});
 const SortedProducts = [...filteredProducts].sort((a , b) => {
 if(sortOrder === "lowToHigh"){
 return a.price - b.price;
@@ -93,10 +54,8 @@ return a.price - b.price;
 }
 return 0;
 })
-const searchProducts = SortedProducts.filter((product) => product.productName?.toLowerCase().includes(search?.toLowerCase()));
 return(
 <>
-
 <ShopBanner />
 <div className={Style.ShopContainer}>
 <Row className="g-2 m-0">
@@ -110,10 +69,9 @@ return(
     SetSelectedBrand={SetSelectedBrand}
   />
 </Col>
-
-<Col lg={10} className='mt-lg-0'>
+<Col lg={10} className='mt-lg-0 p-0'>
   <ShopProducts 
-    searchProducts={searchProducts}
+    searchProducts={SortedProducts}
     SortedProducts={SortedProducts}
     sortOrder={sortOrder}
     SetSortOrder={SetSortOrder}
@@ -123,10 +81,8 @@ return(
     MinPrice={MinPrice}
   />
 </Col>
-
 </Row>
 </div>
-
 </>
 )
 }

@@ -3,6 +3,7 @@ import LeftPanel from '../component/LeftPanel/LeftPanel';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ImageOne from '../assets/1624bd56-2b6c-4d27-8933-7f3491fc9d2c (1).png';
+import { Link } from 'react-router-dom';
 
 function Reset(){
     return(
@@ -69,7 +70,7 @@ description={<>join your community and get access to <br />exclusive offers, lat
     <path fill="#EA4335" d="M12 6.36c1.43 0 2.71.49 3.72 1.45l2.79-2.79C16.84 3.5 14.63 2.5 12 2.5a9.74 9.74 0 0 0-8.71 5.38l3.25 2.51C7.31 8.08 9.46 6.36 12 6.36z"/>
   </svg>Continue with Google</button>
 </div>
-<p className={`mb-lg-0 ${Style.AllreadyAccountTwo}`}>Already have an account?<span className={`ms-lg-2 ${Style.LoginTwo}`}>Login</span></p>
+<Link to="/login" className={`mb-lg-0 ${Style.AllreadyAccountTwo}`}>Already have an account?<span className={`ms-lg-2 ${Style.LoginTwo}`}>Login</span></Link>
 </div>
 </div>
 </div>

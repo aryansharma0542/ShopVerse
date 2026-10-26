@@ -9,9 +9,13 @@ import ImageThree from '../assets/b08efb55-be80-4ab9-b9e8-bfc252d63943.png'
 import ImageFour from '../assets/2f98f726-31e9-4e03-a58e-ac293c53b5bd.png'
 import { useState } from 'react';
 import ShippingWar from '../component/ShippingWarrenty/ShippingWar';
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext';
 
 
 function DetailPage(){
+        const { cart, dispatch } = useContext(CartContext);
+
 const {ProductID} = useParams();
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
@@ -26,17 +30,41 @@ const Saving = findProduct.Cutprice - findProduct.price;
 const discount = Math.floor((Saving / findProduct.Cutprice) * 100);
 
 const handleAddToCart = () => {
-  if (findProduct.options?.sizes && !selectedSize) {
-    alert("Please select a size");
-    return;
-  }
+    if (findProduct.options?.sizes && !selectedSize) {
+        alert("Please select a size");
+        return;
+    }
 
-  if (findProduct.options?.colors && !selectedColor) {
-    alert("Please select a color");
-    return;
-  }
-    alert("Size and Color selected successfully!");
-}
+    if (findProduct.options?.colors && !selectedColor) {
+        alert("Please select a color");
+        return;
+    }
+
+    if (findProduct.options?.shades && !selectedShade) {
+        alert("Please select a shade");
+        return;
+    }
+
+    if (findProduct.options?.storage && !selectedStorage) {
+        alert("Please select storage");
+        return;
+    }
+
+    const cartProduct = {
+        ...findProduct,
+        selectedSize,
+        selectedColor,
+        selectedShade,
+        selectedStorage
+    };
+
+    dispatch({
+        type: "ADD_TO_CART",
+        payload: cartProduct
+    });
+
+    alert("Product added to cart successfully!");
+};
 
 
 return(

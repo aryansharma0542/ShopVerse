@@ -1,97 +1,152 @@
 .ContainerFluid {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-x: hidden;
     background-image: url('../assets/2315b729-1248-4b27-896f-8aaf23c205dd.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    width: 100%;
-    min-height: 100vh;
 }
 
-.Wrapper{
+.ContainerFluid > :global(.row) {
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+.ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
     display: flex;
+    align-items: center;
     justify-content: center;
+    min-width: 0;
     min-height: 100vh;
+    min-height: 100svh;
+    padding: 24px;
+    box-sizing: border-box;
 }
 
-.Card{
+.Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+}
+
+.Card {
     width: 100%;
     max-width: 500px;
+    min-width: 0;
     padding: 30px;
     border-radius: 12px;
     background-color: white;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
-.ImageOne{
-    width: 150px;
+.logo {
+    gap: 12px;
+    min-width: 0;
+}
+
+.ImageOne {
+    width: min(150px, 42%);
     height: auto;
+    max-width: 100%;
 }
 
-.AllreadyAccountOne{
-    font-size: 13px;  
-    text-decoration: none;
+.AllreadyAccountOne {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 4px;
     color: gray;
+    text-decoration: none;
+    text-align: right;
+    font-size: 13px;
+    overflow-wrap: anywhere;
 }
 
-.LoginOne{
+.LoginOne {
     color: #f4511e;
     font-size: 13px;
     font-weight: 700;
 }
 
-.CreateAccount{
-font-size: 25px;
+.CreateAccount {
+    margin-bottom: 4px;
+    font-size: 25px;
+    overflow-wrap: anywhere;
+}
+
+.para {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 .formGroup {
     margin-bottom: 10px;
+    min-width: 0;
 }
 
-.formGroup label{
+.formGroup label {
+    display: block;
+    margin-bottom: 4px;
     font-size: 15px;
     font-weight: 600;
-    display: block;
-    margin-bottom: 2px;
 }
 
-.inputBox{
+.inputBox {
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
+    min-width: 0;
+    min-height: 42px;
+    padding: 0 12px;
     border: 1px solid #ddd;
-    background-color: white;
     border-radius: 5px;
-    padding: 0px 15px;
+    background-color: white;
+    box-sizing: border-box;
 }
 
-.inputBox input{
+.inputBox input {
     display: block;
     width: 100%;
-    padding: 6px 5px;
-    border-radius: 5px;
+    min-width: 0;
+    padding: 8px 5px;
     border: none;
+    border-radius: 5px;
     outline: none;
+    box-sizing: border-box;
 }
 
-.inputBox i{
-    background-color: white;
+.inputBox i {
+    flex: 0 0 auto;
     color: #999;
 }
 
 .Terms {
-    margin-top: 15px;
-    font-size: 14px;
+    display: flex;
+    align-items: flex-start !important;
+    gap: 8px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .Terms input {
+    flex: 0 0 auto;
+    margin-top: 3px;
     accent-color: #f4511e;
 }
 
 .Terms label {
+    min-width: 0;
     color: #333;
+    overflow-wrap: anywhere;
 }
 
 .Terms a {
@@ -100,74 +155,188 @@ font-size: 25px;
     font-weight: 500;
 }
 
-.SignUpButton{
+.SignUpButton {
     width: 100%;
+    padding: 10px 20px;
     border: none;
+    border-radius: 10px;
     background-color: #ff5a00;
     color: white;
-    border-radius: 10px;
-    padding: 8px 20px;
 }
 
-.Or{
+.Or {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
-.Or span{
+.Or span {
     flex: 1;
     height: 1px;
     background: #ddd;
 }
 
 .Or p {
-    font-size: 10px;
+    margin-bottom: 0;
     color: #888;
+    font-size: 10px;
 }
 
-.AllreadyAccountTwo{
-font-size: 15px;
-text-decoration: none;
-display: flex;
-align-items: center;
-justify-content: center;
-color: gray;
-}
-
-.LoginTwo{
-color: #f4511e;
-font-weight: 700;
-font-size: 15px;
-text-decoration: none;
-}
-
-.para{
-font-size: 14px;
-}
-
-.ShopVerseHeading{
-color: #f4511e;
-}
-
-.SocialButtons{
-display: flex;
-gap: 10px;
-}
-
-.SocialButtons button{
-    width: 50%;
-    font-size: 12px;
-    border: 1px solid #ddd;
-    font-weight: 500;
-    background-color: white;
-    font-size: 14px;
-    padding: 8px;
+.SocialButtons {
     display: flex;
-    justify-content: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.SocialButtons button {
+    display: flex;
     align-items: center;
-    cursor: pointer;
-    gap: 5px;
+    justify-content: center;
+    gap: 6px;
+    width: 50%;
+    min-width: 0;
+    padding: 9px 8px;
+    border: 1px solid #ddd;
     border-radius: 9px;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.SocialButtons svg {
+    flex: 0 0 auto;
+}
+
+.AllreadyAccountTwo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.LoginTwo {
+    color: #f4511e;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ShopVerseHeading {
+    color: #f4511e;
+}
+
+@media (max-width: 1199.98px) {
+    .Card {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):first-child {
+        display: none !important;
+    }
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 20px;
+    }
+
+    .Card {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 16px;
+    }
+
+    .Card {
+        max-width: 100%;
+        padding: 24px 20px;
+    }
+
+    .logo {
+        flex-wrap: wrap;
+    }
+
+    .ImageOne {
+        width: min(130px, 42%);
+    }
+
+    .CreateAccount {
+        font-size: 23px;
+    }
+
+    .SocialButtons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .SocialButtons button {
+        width: 100%;
+        min-height: 42px;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 12px;
+    }
+
+    .Card {
+        padding: 22px 16px;
+    }
+
+    .CreateAccount {
+        font-size: 21px;
+    }
+
+    .formGroup label {
+        font-size: 14px;
+    }
+
+    .AllreadyAccountTwo {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 340.98px) {
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 8px;
+    }
+
+    .Card {
+        padding: 20px 12px;
+    }
+
+    .CreateAccount {
+        font-size: 19px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+    .Terms {
+        font-size: 12px;
+    }
 }

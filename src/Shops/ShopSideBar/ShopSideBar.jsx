@@ -42,7 +42,7 @@ return(
 <div className={Style.FilterColumn}> 
 {/* Part-One */}
 <div className={`${Style.CategoryOption} ${OpenCategory ? Style.OpenCategoryMargin : Style.ClosedCategoryMargin}`} onClick={()=> SetOpenCategory(!OpenCategory)}>
-<h4 className={`${Style.Category} mb-lg-0`}>Category</h4>
+<h4 className={`mb-0 ${Style.Category} mb-lg-0`}>Category</h4>
 <i className={`${Style.Icons} fa-solid ${OpenCategory ? "fa-angle-up" : "fa-angle-down"}`}></i>
 </div>
 {/* open - close */}
@@ -67,7 +67,7 @@ onChange={()=> SetSelectedCategory(product.category)}
  <div className={Style.FilterColumn}>
 {/* Part-Two */}
 <div className={`${Style.RangeOption} ${OpenRange ? Style.OpenCategoryMargin : Style.ClosedCategoryMargin}`} onClick={() => SetRange(!OpenRange)}>
-<h4 className={`${Style.Category} mb-lg-0`}>Price Range</h4>
+<h4 className={`mb-0  ${Style.Category} mb-lg-0`}>Price Range</h4>
 <i className={`fa-solid ${OpenRange ? "fa-angle-up" : "fa-angle-down"}`}></i>
 </div>
 {/* open - close */}
@@ -92,7 +92,7 @@ onChange={(e) =>  SetMinPrice(Number(e.target.value))}
 <div className={Style.FilterColumn}>
 {/* Part - Three */}
 <div className={`${Style.BrandsOption} ${openBrand ? Style.OpenBrand : Style.ClosedBrandMargin}`} onClick={()=> SetOpenBrand(!openBrand)}>
-<h4 className={`${Style.Category} mb-lg-0`}>Brands</h4>
+<h4 className={`mb-0 ${Style.Category} mb-lg-0`}>Brands</h4>
 <i className={`${Style.Icons} fa-solid ${openBrand ? "fa-angle-up" : "fa-angle-down"}`}></i>
 </div>
 {/* open - close */}

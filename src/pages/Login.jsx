@@ -5,48 +5,86 @@ import ImageOne from '../assets/1624bd56-2b6c-4d27-8933-7f3491fc9d2c.png'
 import BannerImage from '../assets/928053bf-997d-42ef-9f17-7d653d7c579e.png'
 import { Link } from 'react-router-dom';
 
+import { useState } from 'react';
 import LeftPanel from '../component/LeftPanel/LeftPanel';
 
 function Login(){
+  const [email, setEmail] = useState("");
+const [password, setPassword] = useState("");
+const [error, setError] = useState("");
+const [success, setSuccess] = useState("");
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setError("");
+    setSuccess("");
+
+    if (!email.trim() || !password) {
+        setError("Please fill in all fields.");
+        return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setError("Please enter a valid email address.");
+        return;
+    }
+
+    if (password.length < 8) {
+        setError("Password must be at least 8 characters.");
+        return;
+    }
+
+    setSuccess("Login form validated successfully!");
+};
 return(
 <div className={Style.loginContainer}>
 <Row className={`gx-0 align-items-stretch`}>
 {/* Left - Side */}
-<Col lg={5} className= {` ${Style.LeftCol} d-none`}>
+<Col lg={6} className={`${Style.LeftCol} ${Style.LeftSide}`}>
 <LeftPanel 
 image={ImageOne}
 title={<>Discover Your <span className={Style.Style}>Style</span></>}
 backgroundImage={BannerImage}
 description={<>Trendy Products , Best Brands and Great Deals - All in One Place.</>}
 />
-
-
 </Col>
 {/* Right - Side */}
-<Col lg={7} className={Style.RightCol}>
+<Col lg={6} className={Style.RightCol}>
 <div className={Style.card}>
 <h2 className={Style.logo}>Shop<span>Verse</span></h2>
 <h3 className={Style.WelComeback}>Welcome Back!</h3>
 <p className={Style.subTitle}>login to your account to continue shoppping</p>
 {/* Form & Form Fields */}
-<form action="">
-<div  iv className={Style.formGroup}>
+<form onSubmit={handleSubmit}>
+<div className={Style.formGroup}>
 <label>Email</label>
 <div className={Style.inputBox}>
 <i className="fa-regular fa-envelope"></i>
-<input type="email"  placeholder='enter your email'/>
+<input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='enter your email'/>
 </div>
 </div>
 <div className={Style.formGroup}>
 <label>Password</label>
 <div className={Style.inputBox}>
 <i className="fa-solid fa-lock"></i>
-<input type="password"  placeholder='enter your password'/>
+<input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='enter your password'/>
 </div>
 {/* Forget - password */}
 </div>
 <Link to="/forgetpassword" className={`${Style.forget} d-flex justify-content-end text-decoration-none`}><span>Forget Password?</span></Link>
 {/* Login Button */}
+{error && (
+    <p role="alert" className="text-danger">
+        {error}
+    </p>
+)}
+
+{success && (
+    <p role="status" className="text-success">
+        {success}
+    </p>
+)}
 <button className={Style.LoginBtn} type='submit'>Login</button>
 </form>
 <div className={Style.Or}>

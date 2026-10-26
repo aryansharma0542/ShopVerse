@@ -3,7 +3,7 @@ import ShopVerseLogo from '../../assets/1624bd56-2b6c-4d27-8933-7f3491fc9d2c.png
 import Dropdown from 'react-bootstrap/Dropdown';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState , useRef , useEffect } from 'react';
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
@@ -13,8 +13,14 @@ import { AllProducts } from '../../data';
 import { wishlistContext } from '../../Context/wishlistContext';
 
 function Top() {
+const location = useLocation();
+const navigate = useNavigate();
 const handleSearch = () => {
 setSearch(searchInput.trim());
+setShowSuggestions(false);
+if (!/^\/shop(?:\/|$)/i.test(location.pathname)) {
+    navigate("/shop");
+}
 };
 const{searchInput, setSearch , setSearchInput} = useContext(SearchContext);
 const [showSuggestions, setShowSuggestions] = useState(false);
@@ -31,7 +37,8 @@ setShowSuggestions(false);
     }
     document.addEventListener("mousedown" , handleOutClick);
 },[])
-const suggestion =  searchInput.trim() ? AllProducts.filter((product) => product.productName?.toLowerCase().includes(searchInput.toLowerCase())).slice(0 , 8) : [];
+const normalizedSearchInput = searchInput.trim().toLowerCase();
+const suggestion = normalizedSearchInput ? AllProducts.filter((product) => product.productName?.toLowerCase().includes(normalizedSearchInput)).slice(0 , 8) : [];
 const { cart  , dispatch} = useContext(CartContext);
 const {wishlist} = useContext(wishlistContext);
 const TotalPrice =  cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -40,7 +47,6 @@ const[selectCategoryLabel , SetSelectedCategoryLabel ] = useState("All Categorie
 
 return (
 <header className={Styles.header}>
-
 {/* Top Bar */}
 <div className={Styles.topContainer}>
 <div className={Styles.navOne}>
@@ -72,7 +78,7 @@ aria-controls="navbarScroll" className={Styles.mobileToggle}><i className={`fa-s
 <div className="d-none d-lg-block">
 <img src={ShopVerseLogo}className={`${Styles.ShopVerselogoWidth}`}alt="ShopVerse Logo"/>
 </div>
-<div className={` ${Styles.AllCatInp} d-flex align-items-center`}>
+<div className={`${Styles.AllCatInp} d-flex align-items-center`}>
 <Dropdown>
 <Dropdown.Toggle className={`${Styles.categoryBtn} d-none d-lg-block`}id="dropdown-basic">
 {selectCategoryLabel}
@@ -97,7 +103,14 @@ aria-controls="navbarScroll" className={Styles.mobileToggle}><i className={`fa-s
 { showSuggestions && suggestion.length > 0 && (
 <div className={Styles.SearchDropdown}>
     {suggestion.map((product) => (
-<div className={Styles.searchSuggestion} onClick={() =>{ setSearchInput(product.productName); setShowSuggestions(false)  }}>
+<div className={Styles.searchSuggestion} key={product.id} onClick={() => {
+    setSearchInput(product.productName);
+    setSearch(product.productName);
+    setShowSuggestions(false);
+    if (!/^\/shop(?:\/|$)/i.test(location.pathname)) {
+        navigate("/shop");
+    }
+}}>
     <img src={product.image} alt="" />
     <span>{product.productName}</span></div>
     ))}
@@ -126,14 +139,18 @@ aria-controls="navbarScroll" className={Styles.mobileToggle}><i className={`fa-s
 <>
 <div className={Styles.emptyCartWrapper}>
 <div className={`d-flex align-items-center justify-content-between ${Styles.emptyCartBorder}`}>
-<img src={CartImage} className={Styles.cartImage} alt="" />
-<i onClick={() => SetShowCart(false)} className={`fa-regular fa-circle-xmark ${Styles.CrossCart}`}></i>
+<img src={ShopVerseLogo} className={Styles.cartImage} alt="ShopVerse" />
+<button type="button" onClick={() => SetShowCart(false)} className={Styles.CloseCart} aria-label="Close cart">
+<i className="fa-solid fa-xmark" aria-hidden="true"></i>
+</button>
 </div>
 <div className={Styles.emptyCartContent}>
-<h5 className={`mb-lg-3 ${Styles.Slogan}`}>Your Cart is Empty!</h5>
-<p className={`${Styles.LookLikes} mb-lg-1`}>Looks like you haven't added anythingto your cart yet.</p>
+<div className={Styles.EmptyCartIcon} aria-hidden="true">
+<i className="fa-solid fa-cart-shopping"></i>
+</div>
+<h5 className={Styles.Slogan}>Your Cart is Empty!</h5>
+<p className={Styles.LookLikes}>Looks like you haven't added anything to your cart yet.</p>
 <Link to="/shop" onClick={() => SetShowCart(false)} className={Styles.shopNowBtn}>Start Shopping</Link>
-<img src={CartImage} className={Styles.cartImageTwo} alt="" />
 </div>
 </div>
 </>
@@ -144,7 +161,9 @@ aria-controls="navbarScroll" className={Styles.mobileToggle}><i className={`fa-s
 <h5 className={`mb-lg-0 ${Styles.CartLength} `}>
 <img src={CartImage} className={Styles.cartImageThree} alt="" />
 <i className={`fa-solid fa-cart-shopping ${Styles.cart}`}></i>({cart.length})</h5>
-<i onClick={() => SetShowCart(false)} className={`fa-regular fa-circle-xmark ${Styles.CrossCart}`}></i>
+<button type="button" onClick={() => SetShowCart(false)} className={Styles.CloseCart} aria-label="Close cart">
+<i className="fa-solid fa-xmark" aria-hidden="true"></i>
+</button>
 </div>
 
 {/* Second */}

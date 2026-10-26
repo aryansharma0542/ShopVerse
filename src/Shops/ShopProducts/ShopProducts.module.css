@@ -40,10 +40,12 @@ background-color: white;
 appearance: none;
 }
 
+
 .SelectIcon {
     position: absolute;
     right: 13px;
-    top: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: 900;
     pointer-events: none;
     font-size: 13px;
@@ -149,7 +151,7 @@ transition: transform 0.25s ease;
 }
 
 .ProductContent h4 {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 13px;
   font-weight: 400;
   color: #222;
@@ -347,21 +349,157 @@ color: #F72555;
     color: #fff;
 }
 
+@media (max-width: 767.98px) {
+    .PageNumbers,
+  .PageItem {
+    gap: 7px;
+  }
+
+
+.ProductImageBox {
+  height: 135px;
+}
+
+.ProductImageBox img {
+  height: 135px;
+}
+
+
+
+}
+
+
 @media (max-width:575.98px) {
   .Pagination {
-    gap: 6px;
+    gap: 10px;
   }
 
   .PageNumbers,
   .PageItem {
-    gap: 4px;
+    gap: 6px;
   }
 
   .pageBtn,
   .activePage {
     min-width: 36px;
     height: 36px;
-    padding: 0 8px;
+    padding: 0 6px;
+    font-size: 12.5px;
+  }
+
+.AllProducts{
+  font-size: 18px;
+}
+
+.SelectBorder{
+padding: 6px 29px 6px 8px;
+font-size: 15px;
+display : flex;
+align-items: center ! important;
+}
+
+.SelectBorder i{
+  font-size: 11px;
+}
+
+.ProductImageBox {
+  height: 115px;
+}
+
+.ProductImageBox img {
+  height: 115px;
+}
+
+
+}
+
+@media (max-width: 400.98px) {
+.ProductsBox{
+  padding: 9px;
+}
+
+.Pagination{
+  gap: 10px;
+}
+}
+
+@media (max-width: 340.98px) {
+    .SelectBorder {
+    font-size: 13px;
+    padding: 6px 27px 6px 8px;
+  }
+  
+
+.ProductImageBox {
+  height: 100px;
+}
+
+.ProductImageBox img {
+  height: 100px;
+}
+
+  .ProductsBox {
+    padding: 10px;
+  }
+
+  .AllProducts {
+    font-size: 15px;
+  }
+
+    .PageNumbers,
+  .PageItem {
+    gap: 4px;
+  }
+
+
+  .SelectIcon{
+    font-size: 10px;
+  }
+
+.pageBtn,
+  .activePage {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 6px;
+    font-size: 11px;
+  }
+
+  .Pagination {
+    gap: 8px;
+  }
+
+  .WishlistBtn i {
     font-size: 13px;
   }
+
+
+  .ProductContent h5 {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+    .ProductContent h4 {
+    margin-bottom: 4px;
+  }
+
+.rating i{
+  font-size: 9px;
+}
+
+.ProductCard{
+  padding: 6px;
+}
+
+.ProductContent{
+  padding-top: 10px;
+}
+
+.button{
+  padding: 6px 0px;
+  font-size: 12px;
+}
+
+.price{
+  font-size: 13px;
+}
 }
