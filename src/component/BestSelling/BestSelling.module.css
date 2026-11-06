@@ -1,0 +1,658 @@
+
+/* ============================= */
+/* View All */
+/* ============================= */
+
+.ViewAll {
+    font-size: 16px;
+    color: #f4511e;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.ViewAll:hover {
+    color: #c83b10;
+}
+
+/* ============================= */
+/* Description */
+/* ============================= */
+
+.BestSellingDes {
+    display: flex;
+    gap: 4px;
+    min-width: 0;
+}
+
+.oldprice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    margin: 0 !important;
+    flex-wrap: wrap;
+}
+
+/* ============================= */
+/* Container */
+/* ============================= */
+
+.SellingContainer {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+/* ============================= */
+/* Card Link */
+/* ============================= */
+
+.cardLink {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* ============================= */
+/* Product Image */
+/* ============================= */
+
+.productImages {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.cardLink:hover .productImages {
+    transform: scale(1.04);
+}
+
+/* ============================= */
+/* Product Card */
+/* ============================= */
+
+.card {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.cardLink:hover .card {
+    transform: translateY(-4px);
+    border-color: #f4511e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.WishListColr {
+    background-color: aquamarine;
+}
+
+/* ============================= */
+/* Caption */
+/* ============================= */
+
+.Caption {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.Caption h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Caption h5 {
+    min-height: 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.activeHeart {
+    color: #F72555;
+}
+
+/* ============================= */
+/* Price */
+/* ============================= */
+
+.price {
+    color: #f4511e;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 0 !important;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.Cutprice {
+    color: gray;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ============================= */
+/* Cart Button */
+/* ============================= */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid #f4511e;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #f4511e;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #f4511e;
+    color: #fff;
+}
+
+.Cart {
+    color: #f4511e;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.button:hover .Cart {
+    color: #fff;
+}
+
+/* ============================= */
+/* Reviews */
+/* ============================= */
+
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 4px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 2px 0 10px;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.rating {
+    color: gold;
+    font-size: 11px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.reviewCount {
+    color: #777;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+/* ============================= */
+/* Product Border */
+/* ============================= */
+
+.ProductBorder {
+    border-bottom: 1px solid #eee;
+    height: 155px;
+    padding-bottom: 12px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* Heading */
+/* ============================= */
+
+.BestSellingProduct {
+    font-weight: 600;
+    font-size: 21px;
+    color: #222;
+}
+
+/* ============================= */
+/* Wishlist */
+/* ============================= */
+
+.WishlistBtn {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.WishlistBtn:hover {
+    color: #F72555;
+    transform: scale(1.08);
+}
+
+.WishlistBtn i {
+    font-size: 15px;
+}
+
+/* ================================= */
+/* Large Desktop: 1400px+ */
+/* ================================= */
+
+@media (min-width: 1400px) {
+
+    .SellingContainer {
+        padding: 10px 20px;
+    }
+}
+
+/* ================================= */
+/* Laptop: 992px - 1399px */
+/* ================================= */
+
+@media (max-width: 1399.98px) {
+
+    .SellingContainer {
+        padding: 10px 15px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .Caption h4 {
+        font-size: 14px;
+    }
+
+    .BestSellingProduct {
+        font-size: 20px;
+    }
+
+    .productImages {
+        height: 130px;
+    }
+
+    .ProductBorder {
+        height: 145px;
+    }
+
+    .price {
+        font-size: 17px;
+    }
+
+    .button {
+        font-size: 13px;
+        padding: 7px 4px;
+    }
+}
+
+/* ================================= */
+/* Tablet: 768px - 991px */
+/* ================================= */
+
+@media (max-width: 991.98px) {
+
+    .SellingContainer {
+        padding: 10px 12px;
+    }
+
+    .BestSellingProduct {
+        font-size: 19px;
+    }
+
+    .ViewAll {
+        font-size: 14px;
+    }
+
+    .productImages {
+        height: 115px;
+    }
+
+    .ProductBorder {
+        height: 130px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .Caption h4 {
+        font-size: 14px;
+    }
+
+    .Caption h5 {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .Cutprice {
+        font-size: 12px;
+    }
+
+    .WishlistBtn {
+        width: 27px;
+        height: 27px;
+    }
+
+    .reviews {
+        gap: 3px;
+    }
+
+    .rating,
+    .reviewCount {
+        font-size: 11px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 6px 4px;
+    }
+
+    .Cart {
+        font-size: 12px;
+    }
+}
+
+/* ================================= */
+/* Mobile Landscape: 576px - 767px */
+/* ================================= */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .SellingContainer {
+        padding: 10px 12px;
+    }
+
+    .BestSellingProduct {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .ProductBorder {
+        height: 125px;
+    }
+
+    .productImages {
+        height: 110px;
+    }
+
+    .Caption h4 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .button {
+        padding: 7px 4px;
+    }
+}
+
+/* ================================= */
+/* Mobile: 401px - 575px */
+/* THREE CARDS PER ROW */
+/* ================================= */
+
+@media (min-width: 401px) and (max-width: 575.98px) {
+
+    .SellingContainer {
+        padding: 10px 8px;
+    }
+
+    .BestSellingProduct {
+        font-size: 16px;
+    }
+
+    .ViewAll {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    .ProductBorder {
+        height: 105px;
+        padding-bottom: 6px;
+    }
+
+    .productImages {
+        height: 88px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .Caption h4 {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+
+    .Caption h5 {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .Cutprice {
+        font-size: 9px;
+    }
+
+    .oldprice {
+        gap: 4px;
+    }
+
+    .reviews {
+        gap: 2px;
+        margin: 2px 0 7px;
+    }
+
+    .rating {
+        font-size: 9px;
+    }
+
+    .reviewCount {
+        font-size: 9px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 6px 2px;
+        gap: 2px;
+    }
+
+    .Cart {
+        font-size: 10px;
+    }
+
+    .WishlistBtn {
+        width: 23px;
+        height: 23px;
+    }
+
+    .WishlistBtn i {
+        font-size: 11px;
+    }
+}
+
+/* ================================= */
+/* Small Mobile: 400px and below */
+/* TWO CARDS PER ROW */
+/* ================================= */
+
+@media (max-width: 400px) {
+
+    .SellingContainer {
+        padding: 10px 6px;
+    }
+
+    .BestSellingProduct {
+        font-size: 15px;
+    }
+
+    .ViewAll {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 7px;
+        border-radius: 8px;
+    }
+
+    .ProductBorder {
+        height: 100px;
+        padding-bottom: 6px;
+    }
+
+    .productImages {
+        height: 85px;
+    }
+
+    .Caption h4 {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+
+    .Caption h5 {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    .Cutprice {
+        font-size: 10px;
+    }
+
+    .oldprice {
+        gap: 5px;
+    }
+
+    .reviews {
+        gap: 3px;
+        margin: 2px 0 8px;
+    }
+
+    .rating {
+        font-size: 9px;
+    }
+
+    .reviewCount {
+        font-size: 9px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 5px 2px;
+        gap: 2px;
+    }
+
+    .Cart {
+        font-size: 10px;
+    }
+
+    .WishlistBtn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .WishlistBtn i {
+        font-size: 11px;
+    }
+}
+
+/* ================================= */
+/* Touch Device Hover */
+/* ================================= */
+
+@media (hover: none) {
+
+    .cardLink:hover .card {
+        transform: none;
+        border-color: #e5e7eb;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .cardLink:hover .productImages {
+        transform: none;
+    }
+}
+
+
+/* 401px - 575px: Three Cards */
+
+@media (min-width: 401px) and (max-width: 575.98px) {
+
+    .BestSellPadd {
+        flex: 0 0 33.333333%;
+        width: 33.333333%;
+        max-width: 33.333333%;
+    }
+
+}
+
+
+/* 500px - 575px: Three Cards */
+
+@media (min-width: 500px) and (max-width: 575.98px) {
+
+    .CardsRow > .BestSellPadd {
+        flex: 0 0 33.333333% !important;
+        width: 33.333333% !important;
+        max-width: 33.333333% !important;
+    }
+
+}

@@ -1,0 +1,260 @@
+
+.ContactCardContainer {
+    padding: 10px 20px;
+}
+
+.ContactCard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    height: 100%;
+    min-width: 0;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.CardLogo {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.CardLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.CardContentCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.heading {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 4px !important;
+}
+
+.Contact {
+    display: block;
+    min-width: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 1199.98px) {
+    .ContactCard {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .CardLogo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .Contact {
+        font-size: 13px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+
+        .ContactCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        padding: 14px;
+        height: 100%;
+        min-width: 0;
+    }
+
+    .CardLogo {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .CardContentCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        flex: none;
+    }
+
+    .Contact {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .ContactCardContainer{
+        padding: 10px 15px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+
+    .ContactCard {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .ContactCardContainer{
+        padding: 10px 12px;
+    }
+
+    .CardLogo {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .CardContentCard {
+        align-items: flex-start;
+        width: auto;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .Contact {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .text {
+        font-size: 11px;
+        text-align: left;
+    }
+
+
+}
+
+
+
+@media (max-width: 575.98px) {
+    .ContactCardContainer {
+        padding: 10px 8px;
+    }
+
+    .CardLogo {
+        width: 41px;
+        height: 41px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .Contact {
+        font-size: 11px;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .ContactCard{
+        gap: 6px;
+        padding: 9px;
+    }
+}
+
+
+@media (max-width: 400.98px) {
+
+    .ContactCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 8px;
+        height: 100%;
+        min-width: 0;
+    }
+
+    .CardLogo {
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+
+    .CardContentCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex: 1;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 14px;
+        margin: 0 0 3px !important;
+    }
+
+    .Contact {
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+        font-size: 11px;
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    .text {
+        font-size: 10px;
+        line-height: 1.35;
+        text-align: center;
+    }
+}

@@ -1,0 +1,332 @@
+
+/* ==============================
+   Main Footer
+============================== */
+
+.footer {
+    width: 100%;
+    background-color: #FEF3ED;
+    border-radius: 10px 10px 0 0;
+}
+
+.FooterContainer {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    box-sizing: border-box;
+}
+
+.FooterContainer * {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Brand Section
+============================== */
+
+.BrandSection {
+    width: 100%;
+}
+
+.ImageOne {
+    width: 170px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.Para {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+
+.SocialMediaIcons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.SocialMediaIcons a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    transition: color 0.2s ease;
+}
+
+.SocialMediaIcons a:hover {
+    color: #f4511e;
+}
+
+/* ==============================
+   Footer Headings
+============================== */
+
+.AllLabel {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #171717;
+    overflow-wrap: anywhere;
+}
+
+.AcceptThis {
+    font-size: 20px;
+}
+
+/* ==============================
+   Footer Links
+============================== */
+
+.footerLinksOne {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footerLinksOne a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footerLinksOne a:hover {
+    color: #f4511e;
+}
+
+/* ==============================
+   Payment Methods
+============================== */
+
+.PaymentMethods {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.PaymentMethods img {
+    width: 100%;
+    max-width: 100px;
+    height: 48px;
+    object-fit: contain;
+    padding: 6px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width: 1199.98px) {
+
+    .FooterContainer {
+        padding: 30px 24px;
+    }
+
+    .ImageOne {
+        width: 150px;
+    }
+
+    .AllLabel {
+        font-size: 15px;
+    }
+
+    .footerLinksOne a {
+        font-size: 13px;
+    }
+
+    .PaymentMethods {
+        gap: 8px;
+    }
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 991.98px) {
+
+    .FooterContainer {
+        padding: 30px 22px;
+    }
+
+    .ImageOne {
+        width: 145px;
+    }
+
+    .Para {
+        font-size: 13px;
+    }
+
+    .AllLabel {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .footerLinksOne {
+        gap: 8px;
+    }
+
+    .footerLinksOne a {
+        font-size: 13px;
+    }
+
+    .PaymentMethods {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 767.98px) {
+
+    .FooterContainer {
+        padding: 25px 18px;
+    }
+
+    .ImageOne {
+        width: 140px;
+    }
+
+    .BrandSection {
+        max-width: 350px;
+    }
+
+    .Para {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .SocialMediaIcons {
+        gap: 20px;
+    }
+
+    .SocialMediaIcons a {
+        font-size: 20px;
+    }
+
+    .AllLabel {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .footerLinksOne {
+        gap: 9px;
+    }
+
+    .footerLinksOne a {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .AcceptThis {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .PaymentMethods {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 350px;
+    }
+
+    .PaymentMethods img {
+        max-width: 90px;
+        height: 45px;
+    }
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .footer {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .FooterContainer {
+        padding: 22px 15px;
+    }
+
+    .ImageOne {
+        width: 130px;
+    }
+
+    .AllLabel {
+        font-size: 14px;
+    }
+
+    .footerLinksOne {
+        gap: 8px;
+    }
+
+    .footerLinksOne a {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .Para {
+        font-size: 13px;
+    }
+
+    .PaymentMethods {
+        max-width: 300px;
+        gap: 8px;
+    }
+
+    .PaymentMethods img {
+        height: 42px;
+    }
+
+}
+
+/* ==============================
+   Extra Small Mobile
+============================== */
+
+@media (max-width: 380px) {
+
+    .FooterContainer {
+        padding: 20px 12px;
+    }
+
+    .ImageOne {
+        width: 120px;
+    }
+
+    .AllLabel {
+        font-size: 13px;
+    }
+
+    .footerLinksOne a {
+        font-size: 11px;
+        overflow-wrap: anywhere;
+    }
+
+    .Para {
+        font-size: 12px;
+    }
+
+    .SocialMediaIcons {
+        gap: 16px;
+    }
+
+    .PaymentMethods img {
+        height: 38px;
+    }
+
+}

@@ -1,0 +1,803 @@
+
+/* ==============================
+   Main Container
+============================== */
+
+.TrackOrderContainer {
+    max-width: 1280px;
+    width: 100%;
+    margin: 50px auto 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.TrackOrderContainer * {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Track Order Search Box
+============================== */
+
+.TracKingBorder {
+    width: 100%;
+    padding: 35px 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+}
+
+.TrackOrderHeading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.TrackOrderHeading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.TrackOrderHeading p {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.TrackSearchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.TrackSearchBox input {
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.TrackSearchBox input:focus {
+    border-color: #ff4b1f;
+}
+
+.TrackSearchBox button {
+    height: 52px;
+    padding: 0 27px;
+    background-color: #ff4b1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.TrackSearchBox button:hover {
+    background-color: #e94016;
+}
+
+/* ==============================
+   Order Details Container
+============================== */
+
+.OrderDetailsContainer {
+    max-width: 970px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 27px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    min-width: 0;
+}
+
+.OrderDetailsContainer h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.OrderDetailsContainer p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+/* ==============================
+   Order Information Header
+============================== */
+
+.OrderInfoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.OrderInfoHeader h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.OrderInfoHeader span {
+    background: #fff3e8;
+    color: #ff4b1f;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ==============================
+   Order Information Grid
+============================== */
+
+.OrderInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.OrderInfoGrid > div {
+    min-width: 0;
+}
+
+.OrderInfoGrid label {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.OrderInfoGrid p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* ==============================
+   Order Tracking Timeline
+============================== */
+
+.OrderTrackingTimeline {
+    margin-top: 30px;
+    display: flex;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: #ddd;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.OrderTrackingTimeline h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.TrackingList {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.TrackingStep {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 59px;
+    width: 100%;
+}
+
+.TrackingCircle {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    z-index: 1;
+}
+
+.TrackingCircle.Completed {
+    background-color: #ff4b1f;
+    border-color: #ff4b1f;
+    color: white;
+}
+
+.Completed {
+    background-color: #ff4b1f;
+    border-color: #ff4b1f;
+    color: white;
+}
+
+.TrackingStep p {
+    margin: 0;
+    font-size: 16px;
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.TrackingStep span {
+    color: #ff4b1f;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ==============================
+   Product Details
+============================== */
+
+.OrderTrackingDetails {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.ProductDetails {
+    width: 100%;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.ProductDetails h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.ProductInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.ProductInfo > div {
+    min-width: 0;
+}
+
+.ProductInfo > div:last-child {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.ProductInfo h4 {
+    font-size: 16px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.ProductInfo p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.ProductInfo p:last-child {
+    margin-bottom: 0;
+}
+
+.TotalAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ==============================
+   Order Summary
+============================== */
+
+.OrderSummary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.OrderSummary h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.SummaryRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.SummaryRow span:last-child {
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.SummaryRow:last-child {
+    border-bottom: none;
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width: 1199.98px) {
+
+    .TrackOrderContainer {
+        padding: 0 16px;
+    }
+
+    .OrderDetailsContainer {
+        max-width: 900px;
+    }
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 991.98px) {
+
+    .TrackOrderContainer {
+        margin: 35px auto 60px;
+        padding: 0 15px;
+    }
+
+    .TracKingBorder {
+        padding: 30px 20px;
+    }
+
+    .OrderDetailsContainer {
+        padding: 23px;
+        margin-top: 30px;
+    }
+
+    .TrackOrderHeading h2 {
+        font-size: 29px;
+    }
+
+    .OrderTrackingTimeline {
+        padding: 27px 18px;
+    }
+
+    .ProductDetails {
+        padding: 17px;
+    }
+
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 767.98px) {
+
+    .TrackOrderContainer {
+        padding: 0 12px;
+        margin: 25px auto 40px;
+    }
+
+    .TracKingBorder {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+
+    .TrackOrderHeading {
+        margin-bottom: 22px;
+    }
+
+    .TrackOrderHeading h2 {
+        font-size: 26px;
+    }
+
+    .TrackOrderHeading p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .TrackSearchBox {
+        margin: 22px auto 10px;
+        gap: 10px;
+    }
+
+    .TrackSearchBox input {
+        height: 46px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .TrackSearchBox button {
+        height: 46px;
+        padding: 0 17px;
+        font-size: 14px;
+    }
+
+    /* Order Information */
+
+    .OrderDetailsContainer {
+        margin: 25px auto;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .OrderInfoHeader {
+        margin-bottom: 22px;
+        gap: 10px;
+    }
+
+    .OrderInfoHeader h3 {
+        font-size: 19px;
+    }
+
+    .OrderInfoHeader span {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    .OrderInfoGrid {
+        gap: 20px 15px;
+    }
+
+    .OrderInfoGrid label {
+        font-size: 12px;
+    }
+
+    .OrderInfoGrid p {
+        font-size: 14px;
+    }
+
+    /* Tracking Timeline */
+
+    .OrderTrackingTimeline {
+        margin-top: 25px;
+        padding: 25px 12px;
+        border-radius: 15px;
+    }
+
+    .OrderTrackingTimeline h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .TrackingList {
+        max-width: 350px;
+    }
+
+    .TrackingStep {
+        gap: 12px;
+        min-height: 55px;
+    }
+
+    .TrackingCircle {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 14px;
+    }
+
+    .TrackingStep p {
+        font-size: 14px;
+    }
+
+    .TrackingStep span {
+        font-size: 11px;
+    }
+
+    /* Product Details */
+
+    .OrderTrackingDetails {
+        margin-top: 25px;
+    }
+
+    .ProductDetails {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .ProductDetails h3 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .ProductInfo {
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .ProductInfo h4 {
+        font-size: 14px;
+    }
+
+    .ProductInfo p {
+        font-size: 13px;
+    }
+
+    .TotalAmount {
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    /* Order Summary */
+
+    .OrderSummary {
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    .OrderSummary h3 {
+        font-size: 19px;
+    }
+
+    .SummaryRow {
+        font-size: 13px;
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .TrackOrderContainer {
+        padding: 0 10px;
+        margin: 20px auto 35px;
+    }
+
+    .TracKingBorder {
+        padding: 22px 12px;
+    }
+
+    .TrackOrderHeading h2 {
+        font-size: 23px;
+    }
+
+    .TrackOrderHeading p {
+        font-size: 13px;
+    }
+
+    .TrackSearchBox {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .TrackSearchBox input {
+        width: 100%;
+    }
+
+    .TrackSearchBox button {
+        width: 100%;
+    }
+
+    /* Order Information */
+
+    .OrderDetailsContainer {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .OrderInfoHeader {
+        align-items: flex-start;
+    }
+
+    .OrderInfoHeader h3 {
+        font-size: 17px;
+    }
+
+    .OrderInfoHeader span {
+        font-size: 11px;
+        padding: 6px 9px;
+    }
+
+    .OrderInfoGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 10px;
+    }
+
+    .OrderInfoGrid label {
+        font-size: 11px;
+    }
+
+    .OrderInfoGrid p {
+        font-size: 13px;
+    }
+
+    /* Timeline */
+
+    .OrderTrackingTimeline {
+        padding: 22px 10px;
+    }
+
+    .OrderTrackingTimeline h3 {
+        font-size: 18px;
+    }
+
+    .TrackingList {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .TrackingStep {
+        gap: 10px;
+        min-height: 52px;
+    }
+
+    .TrackingCircle {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 13px;
+    }
+
+    .TrackingStep p {
+        font-size: 13px;
+    }
+
+    .TrackingStep span {
+        font-size: 10px;
+    }
+
+    /* Product Details */
+
+    .ProductDetails {
+        padding: 12px;
+    }
+
+    .ProductInfo {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .ProductInfo h4 {
+        font-size: 13px;
+    }
+
+    .ProductInfo p {
+        font-size: 12px;
+    }
+
+    .ProductInfo > div:last-child {
+        flex-shrink: 0;
+    }
+
+    .TotalAmount {
+        font-size: 15px;
+    }
+
+    /* Summary */
+
+    .OrderSummary {
+        padding: 13px;
+    }
+
+    .OrderSummary h3 {
+        font-size: 18px;
+    }
+
+    .SummaryRow {
+        font-size: 12px;
+    }
+
+}
+
+/* ==============================
+   Extra Small Mobile
+============================== */
+
+@media (max-width: 380px) {
+
+    .TrackOrderContainer {
+        padding: 0 8px;
+    }
+
+    .TracKingBorder {
+        padding: 20px 10px;
+    }
+
+    .TrackOrderHeading h2 {
+        font-size: 21px;
+    }
+
+    .OrderDetailsContainer {
+        padding: 12px;
+    }
+
+    .OrderInfoHeader h3 {
+        font-size: 16px;
+    }
+
+    .OrderInfoHeader span {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    .OrderInfoGrid {
+        gap: 16px 8px;
+    }
+
+    .OrderInfoGrid p {
+        font-size: 12px;
+    }
+
+    .OrderTrackingTimeline {
+        padding: 20px 8px;
+    }
+
+    .TrackingStep {
+        gap: 8px;
+    }
+
+    .TrackingCircle {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+
+    .TrackingStep p {
+        font-size: 12px;
+    }
+
+    .TrackingStep span {
+        font-size: 9px;
+    }
+
+    .ProductInfo {
+        gap: 5px;
+    }
+
+    .ProductInfo h4 {
+        font-size: 12px;
+    }
+
+    .ProductInfo p {
+        font-size: 11px;
+    }
+
+    .TotalAmount {
+        font-size: 14px;
+    }
+
+    .SummaryRow {
+        font-size: 11px;
+        gap: 7px;
+    }
+
+}

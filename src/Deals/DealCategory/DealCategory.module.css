@@ -1,0 +1,121 @@
+.CategoryContainer{
+padding: 10px 50px;
+}
+
+.CategoryBox{
+  display: flex;
+  justify-content: space-between;   /* center + bada gap ki jagah */
+  align-items: flex-start;          /* sab icons ek hi line mein */
+  gap: 20px;
+}
+
+.cardCategory{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;      /* center nahi, upar se start */
+  text-align: center;
+  flex: 0 0 auto;                   /* shrink nahi hoga */
+  cursor: pointer;
+}
+
+.cardCategory p{
+  white-space: nowrap;              /* label wrap nahi hoga */
+  margin-bottom: 0;
+}
+
+.cardCategory i {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-size: 24px;
+  color: #ff4b1f;
+  margin-bottom: 8px;
+}
+
+@media (max-width:1199.98px) {
+    
+    .CategoryContainer{
+        padding: 10px 30px;
+    }
+
+.cardCategory i {
+    height: 56px;
+    width: 56px;
+}
+
+.cardCategory p{
+  white-space: nowrap;              /* label wrap nahi hoga */
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+
+.CategoryBox{
+display: flex;
+gap: 20px;
+    }
+}
+
+@media (max-width:991.98px) {
+    
+.CategoryBox{
+  display: flex;
+  gap: 4px; 
+}
+
+.CategoryContainer{
+    padding: 10px 25px;
+}
+
+.cardCategory i {
+    height: 48px;
+    width: 48px;
+}
+
+.cardCategory p{
+  white-space: nowrap;              /* label wrap nahi hoga */
+  margin-bottom: 0;
+  font-size: 13px;
+}
+}
+
+@media (max-width: 767.98px) {
+.cardCategory i {
+    height: 50px;
+    width: 50px;
+}
+
+.cardCategory i::before{
+    font-size: 20px;
+}
+
+.CategoryContainer{
+    padding: 21px 12px;
+}
+
+ .CategoryBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 columns */
+    gap: 16px 10px;                          /* row gap, column gap */
+    justify-content: normal;
+    overflow: visible;                       /* scroll hata diya */
+  }
+
+.cardCategory p{
+    font-size: 12px;
+}
+
+}
+
+@media (max-width: 575px) {
+  
+.CategoryContainer{
+  padding: 10px 8px;
+}
+}
+

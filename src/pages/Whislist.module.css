@@ -1,0 +1,860 @@
+
+/* ================================= */
+/* Main Container */
+/* ================================= */
+
+.WishlistContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+/* ================================= */
+/* Breadcrumb */
+/* ================================= */
+
+.BreadCrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* ================================= */
+/* Main Row */
+/* ================================= */
+
+.WishlistRow {
+    align-items: stretch;
+    --bs-gutter-x: 16px;
+    row-gap: 15px;
+}
+
+/* ================================= */
+/* Left Section */
+/* ================================= */
+
+.WishlistLeftCol {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.wishlist {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.WishlistLength {
+    color: #f72555;
+    margin-left: 5px;
+}
+
+/* ================================= */
+/* Empty Wishlist */
+/* ================================= */
+
+.EmptyCartWishlist {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.EmptyCartWishlist i {
+    color: #F72555;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.EmptyCartWishlist h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.EmptyCartWishlist p {
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* ================================= */
+/* Wishlist Product Card */
+/* ================================= */
+
+.CardWishlist {
+    position: relative;
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 10px 35px 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 12px;
+    background: #fff;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+/* ================================= */
+/* Product Image */
+/* ================================= */
+
+.ProductImage {
+    width: 120px;
+    height: 115px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8f8f8;
+    flex-shrink: 0;
+}
+
+/* ================================= */
+/* Product Details */
+/* ================================= */
+
+.ProductsDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.productName {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.MixCategory {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    color: gray;
+}
+
+.mainCategory,
+.category {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* ================================= */
+/* Reviews */
+/* ================================= */
+
+.reviews {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 5px 0 0;
+}
+
+.rating {
+    color: #ffae00;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.reviewCount {
+    color: #666;
+    font-size: 13px;
+}
+
+/* ================================= */
+/* Price Section */
+/* ================================= */
+
+.PriceSection {
+    width: 130px;
+    flex-shrink: 0;
+}
+
+.PriceBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: 700;
+    color: #222;
+}
+
+.Cutprice {
+    color: #999;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.Discount {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #dff5e5;
+    color: #198754;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ================================= */
+/* Add To Cart */
+/* ================================= */
+
+.AddCartBtn {
+    width: 145px;
+    flex-shrink: 0;
+    background: #f72555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.AddCartBtn:hover {
+    background: #d91d49;
+}
+
+.AddCartBtn i {
+    margin-right: 6px;
+}
+
+/* ================================= */
+/* Remove Wishlist */
+/* ================================= */
+
+.RemoveWishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 17px;
+    color: #777;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 2px;
+    line-height: 1;
+}
+
+.RemoveWishlist:hover {
+    color: #F72555;
+}
+
+/* ================================= */
+/* Right Summary Section */
+/* ================================= */
+
+.WishlistRightCol {
+    min-width: 0;
+}
+
+.Wrapper {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.WishlistSummary {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid lightgray;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 14px 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.WrapperContent {
+    padding: 15px;
+}
+
+/* ================================= */
+/* Summary Items */
+/* ================================= */
+
+.TotalItems {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5px 12px;
+    margin-bottom: 15px;
+}
+
+.TotalItems span {
+    font-size: 17px;
+    color: #666;
+}
+
+.BoldItems {
+    color: black !important;
+    font-weight: 600;
+}
+
+/* ================================= */
+/* Total Price */
+/* ================================= */
+
+.TotalPrice {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5px 12px;
+    margin-bottom: 18px;
+}
+
+.TotalPrice span {
+    font-size: 17px;
+    color: #666;
+}
+
+.BoldPrice {
+    color: black !important;
+    font-weight: 700;
+}
+
+/* ================================= */
+/* Summary Buttons */
+/* ================================= */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #F72555;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 11px 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.buttons button:hover:not(:disabled) {
+    background-color: #d91d49;
+}
+
+.buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ================================= */
+/* Saved Message */
+/* ================================= */
+
+.ItemsSaved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #f1f4f8;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 12px 8px;
+    margin: 15px 0 0;
+}
+
+.ItemsSaved i {
+    color: #F72555;
+}
+
+/* ================================= */
+/* Laptop: 992px - 1199px */
+/* ================================= */
+
+@media (max-width: 1199.98px) {
+
+    .WishlistContainer {
+        padding: 10px 15px;
+    }
+
+    .CardWishlist {
+        gap: 12px;
+        padding: 10px 30px 10px 10px;
+    }
+
+    .ProductImage {
+        width: 105px;
+        height: 105px;
+    }
+
+    .productName {
+        font-size: 15px;
+    }
+
+    .PriceSection {
+        width: 110px;
+    }
+
+    .price {
+        font-size: 17px;
+    }
+
+    .AddCartBtn {
+        width: 120px;
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    .WishlistSummary {
+        font-size: 21px;
+    }
+
+    .WrapperContent {
+        padding: 12px;
+    }
+
+    .TotalItems span,
+    .TotalPrice span {
+        font-size: 16px;
+    }
+}
+
+/* ================================= */
+/* Tablet: 768px - 991px */
+/* Summary below wishlist */
+/* ================================= */
+
+@media (max-width: 991.98px) {
+
+    .WishlistContainer {
+        padding: 10px 15px;
+    }
+
+    .WishlistRow {
+        --bs-gutter-x: 0;
+        row-gap: 18px;
+    }
+
+    .WishlistLeftCol,
+    .WishlistRightCol {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wishlist {
+        font-size: 23px;
+    }
+
+    .CardWishlist {
+        gap: 18px;
+    }
+
+    .ProductImage {
+        width: 120px;
+        height: 110px;
+    }
+
+    .PriceSection {
+        width: 130px;
+    }
+
+    .AddCartBtn {
+        width: 140px;
+        font-size: 13px;
+    }
+
+    .WishlistSummary {
+        font-size: 23px;
+    }
+
+    .WrapperContent {
+        padding: 15px;
+    }
+
+    .ItemsSaved {
+        font-size: 14px;
+    }
+
+}
+
+/* ================================= */
+/* Mobile: 576px - 767px */
+/* ================================= */
+
+@media (max-width: 767.98px) {
+
+    .WishlistContainer {
+        padding: 10px 12px;
+    }
+
+    .BreadCrumb {
+        margin-bottom: 18px;
+        gap: 8px;
+    }
+
+    .wishlist {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .WishlistRow {
+        row-gap: 18px;
+    }
+
+    /* Product Card */
+
+    .CardWishlist {
+        display: grid;
+        grid-template-columns: 90px minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 18px 12px 18px;
+        min-height: auto;
+    }
+
+    /* Image */
+
+    .ProductImage {
+        grid-column: 1;
+        grid-row: 1;
+        width: 90px;
+        height: 95px;
+    }
+
+    /* Details */
+
+    .ProductsDetails {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .productName {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .MixCategory {
+        gap: 6px;
+    }
+
+    .mainCategory,
+    .category {
+        font-size: 12px;
+    }
+
+    .reviews {
+        gap: 5px;
+        margin-top: 4px;
+    }
+
+    .rating,
+    .reviewCount {
+        font-size: 11px;
+    }
+
+    /* Price */
+
+    .PriceSection {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .PriceBox {
+        gap: 7px;
+    }
+
+    .price {
+        font-size: 17px;
+    }
+
+    .Cutprice {
+        font-size: 12px;
+    }
+
+    .Discount {
+        font-size: 11px;
+        margin-top: 0;
+    }
+
+    /* Add Cart */
+
+    .AddCartBtn {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .RemoveWishlist {
+        top: 9px;
+        right: 9px;
+        font-size: 16px;
+    }
+
+    /* Empty Wishlist */
+
+    .EmptyCartWishlist {
+        min-height: 220px;
+        padding: 20px 12px;
+    }
+
+    .EmptyCartWishlist i {
+        font-size: 65px;
+    }
+
+    .EmptyCartWishlist h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .EmptyCartWishlist p {
+        font-size: 15px;
+    }
+
+    /* Summary */
+
+    .WishlistSummary {
+        font-size: 22px;
+        padding: 13px 8px;
+    }
+
+    .WrapperContent {
+        padding: 12px;
+    }
+
+    .TotalItems span,
+    .TotalPrice span {
+        font-size: 16px;
+    }
+
+    .buttons button {
+        padding: 12px 8px;
+    }
+
+    .ItemsSaved {
+        font-size: 13px;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .CardWishlist{
+        padding: 10px 15px;
+    }
+}
+
+/* ================================= */
+/* Small Mobile: 400px and below */
+/* ================================= */
+
+@media (max-width: 400px) {
+
+    .WishlistContainer {
+        padding: 10px 8px;
+    }
+
+    .BreadCrumb {
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .wishlist {
+        font-size: 20px;
+    }
+
+    .CardWishlist {
+        grid-template-columns: 75px minmax(0, 1fr);
+        gap: 8px;
+        padding: 10px 9px 10px 9px;
+    }
+
+    .ProductImage {
+        width: 75px;
+        height: 85px;
+    }
+
+    .productName {
+        font-size: 13px;
+    }
+
+    .mainCategory,
+    .category {
+        font-size: 11px;
+    }
+
+    .rating,
+    .reviewCount {
+        font-size: 10px;
+    }
+
+    .PriceBox {
+        gap: 5px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .Cutprice {
+        font-size: 11px;
+    }
+
+    .Discount {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+
+    .AddCartBtn {
+        font-size: 12px;
+        padding: 9px 5px;
+    }
+
+    .EmptyCartWishlist {
+        min-height: 190px;
+    }
+
+    .EmptyCartWishlist i {
+        font-size: 55px;
+    }
+
+    .EmptyCartWishlist h3 {
+        font-size: 20px;
+    }
+
+    .EmptyCartWishlist p {
+        font-size: 13px;
+    }
+
+    .WishlistSummary {
+        font-size: 20px;
+    }
+
+    .TotalItems span,
+    .TotalPrice span {
+        font-size: 14px;
+    }
+
+    .ItemsSaved {
+        font-size: 12px;
+    }
+
+}
+
+/* ================================= */
+/* Extra Small Mobile: 340px */
+/* ================================= */
+
+@media (max-width: 340px) {
+
+    .WishlistContainer {
+        padding: 8px 6px;
+    }
+
+    .CardWishlist {
+        grid-template-columns: 65px minmax(0, 1fr);
+        gap: 7px;
+        padding: 11px 8px 11px 8px;
+    }
+
+    .ProductImage {
+        width: 65px;
+        height: 75px;
+    }
+
+    .productName {
+        font-size: 12px;
+    }
+
+    .mainCategory,
+    .category {
+        font-size: 10px;
+    }
+
+    .PriceBox {
+        gap: 4px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .Cutprice {
+        font-size: 10px;
+    }
+
+    .AddCartBtn {
+        font-size: 11px;
+    }
+
+    .RemoveWishlist {
+        top: 7px;
+        right: 7px;
+        font-size: 14px;
+    }
+
+    .EmptyCartWishlist h3 {
+        font-size: 18px;
+    }
+
+    .EmptyCartWishlist p {
+        font-size: 12px;
+    }
+
+}
+
+/* ================================= */
+/* Touch Devices */
+/* ================================= */
+
+@media (hover: none) {
+
+    .AddCartBtn:hover {
+        background-color: #f72555;
+    }
+
+    .buttons button:hover:not(:disabled) {
+        background-color: #F72555;
+    }
+
+}

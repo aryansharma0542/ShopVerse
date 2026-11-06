@@ -1,0 +1,166 @@
+.LatestBlogContainer {
+padding: 8px 20px 20px;
+}
+
+.LatestBlog {
+font-size: 20px;
+font-weight: 600;
+color: #111827;
+}
+
+.ViewAll {
+color: #f4511e;
+font-size: 15px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.Card {
+width: 100%;
+height: 100%;
+overflow: hidden;
+border-radius: 9px;
+background-color: #e3e3e4;
+}
+
+.CardImages {
+height: 100%;
+width: 100%;
+}
+
+.BlogImages {
+object-position: center;
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+border-radius: 5px 0 0 5px;
+}
+
+.Content {
+width: 100%;
+padding: 12px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.title {
+margin: 0 0 8px 0;
+color: #111827;
+font-size: 15px !important;
+line-height: 1.3;
+font-weight: 600;
+}
+
+.description {
+margin: 0 0 7px 0;
+color: #111827;
+font-size: 12px;
+line-height: 1.4;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.Meta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 8px;
+margin-bottom: 7px;
+}
+
+.data,
+.readTime {
+margin: 0;
+color: #111827; font-size: 12px;
+}
+
+.BlogImages {
+object-fit: cover;
+}
+
+.LearnMore {
+color: #f4511e;
+font-size: 14px;
+font-weight: 600;
+text-decoration: none;
+}
+
+.LearnMore:hover {
+color: #d84315;
+}
+
+.LatestBlogPadd{
+padding: 0px 5px !important;
+}
+
+/* First M */
+@media (max-width: 1199.98px) {
+
+.Content {
+width: 100%;
+}
+
+.title{
+font-size: 14px !important;
+}
+
+.description{
+font-size: 12px;
+}
+}
+
+/* Second M */
+@media (max-width: 991px) {
+
+.LatestBlogContainer{
+padding: 10px 15px 10px;
+}
+
+.ViewAll{
+font-size: 15px;
+}
+}
+
+/* Third M */
+@media (max-width: 575px) {
+
+.LatestBlogContainer {
+padding: 10px 8px;
+}
+
+.LatestBlog {
+font-size: 16px;
+}
+
+.ViewAll {
+font-size: 13px;
+}
+
+.CardImages {
+height: auto;
+aspect-ratio: 16 / 10;
+}
+
+.BlogImages {
+height: 100%;
+object-fit: cover;
+object-position: center 25%;
+border-radius: 0;
+}
+
+.Content {
+padding: 25px 10px;
+}
+
+.title {
+font-size: 15px;
+}
+
+.description {
+font-size: 12.5px;
+}
+}

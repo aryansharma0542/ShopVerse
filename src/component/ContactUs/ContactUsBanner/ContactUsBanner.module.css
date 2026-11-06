@@ -1,0 +1,232 @@
+.ContactUsContainer{
+padding: 10px 20px;
+overflow-x: hidden;
+width: 100%;
+}
+
+.BreadCrumb{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.ImageOne{
+display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: right center;
+        aspect-ratio: 16 / 4; 
+}
+
+.ContactImageBannerContent{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+max-width: 55%;
+left: 0%;
+}
+
+.para{
+    font-size: 17px;
+    color:gray;
+}
+
+
+
+.heading{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ContactHeading{
+font-size: 56px;
+font-weight: bolder;
+}
+
+.ContactUs{
+    font-size: 16px;
+    color: #f4511e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Help{
+    color: #f4511e;
+    font-weight: bolder;
+}
+
+@media (max-width:1199.98px) {
+    
+
+.ContactHeading{
+    font-size: 45px;
+}
+
+.ContactUs{
+    font-size: 15px;
+}
+
+.ContactImageBannerContent{
+    padding: 22px 30px !important;
+}
+
+.para{
+    font-size: 15px;
+}
+
+.Help{
+   font-size: 48px;
+}
+}
+
+@media (max-width:991.98px) {
+
+    .ContactUsContainer{
+        padding: 10px 15px;
+    }
+
+    .ContactImageBannerContent{
+        padding: 15px !important;
+          max-width: 50%; 
+    }
+
+    .ContactHeading{
+        font-size: 37.5px;
+        margin-bottom: 4px !important;
+    }
+
+    .ImageOne{
+    height: auto;          /* 190px hata de */
+  aspect-ratio: 16 / 4.1;
+    object-position: 77% center;
+    }
+
+    .ContactUs{
+        font-size: 14px;
+    }
+
+    .para{
+        font-size: 14px;
+    }
+
+    .Help{
+        font-size: 37.5px;
+    }
+
+    .Ourteam{
+display: none;
+    }
+
+    .BreadCrumb{
+    margin-bottom: 8px;
+
+}
+
+}
+
+
+@media (max-width:767.98px) {
+
+.ContactImageBannerContent{
+padding: 18px !important;
+max-width: 53%;
+    }
+
+.para{
+    font-size: 12px;
+}
+
+/* .ImageOne{
+  aspect-ratio: 17 / 4;
+  object-fit: cover;
+    object-position: 60% center;
+    width: 100%; 
+} */
+    .ImageOne{
+        aspect-ratio: 16 / 5.6;
+        object-position: 55% center;
+    }
+
+.ContactUsContainer{
+    padding: 10px 12px;
+}
+
+.ContactUs{
+    font-size: 12px;
+}
+
+.ContactHeading{
+    font-size: 35px;
+}
+
+.Help{
+    font-size: 35px;
+}
+
+
+}
+
+@media (max-width:575.98px) {
+
+
+.Help{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.ContactHeading{
+    font-size: 26px;
+}
+
+.ContactUs{
+    font-size: 12px;
+}
+
+.ContactUsContainer{
+    padding: 10px 8px;
+}
+
+.para{
+    font-size: 10px;
+}
+    .ImageOne {
+        aspect-ratio: 16 / 4.8;
+        object-position: 36% center !important;
+    }
+
+    .ContactImageBannerContent{
+        max-width: 60%;
+        padding: 8.5px !important;
+    }
+}
+
+@media (max-width:400.98px) {
+
+
+.Help{
+    font-size: 22px;
+}
+
+.ContactHeading{
+    font-size: 22px;
+}
+
+.para{
+    font-size: 9px;
+}
+
+    .ContactImageBannerContent{
+        max-width: 51%;
+}
+
+    .ImageOne {
+        aspect-ratio: 12 / 4.9;
+        object-position: 54% center !important;
+    }
+
+}

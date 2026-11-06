@@ -1,0 +1,99 @@
+.Sidebar{
+    width: 250px;
+    min-height: 100vh;
+    background-color: #172337;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Logout{
+    margin-top: auto;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.Logout a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #b8c2d1;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+.Logout a:hover {
+    background-color: #ff7a35;
+    color: white;
+}
+
+.Logo{
+    color: white;
+    font-size: 25px;
+    padding: 0px 14px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    /* padding-left: 10px; */
+}
+
+.Menulist{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menulist li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Verse{
+    color: #ff7a35;
+}
+
+.Menulist a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #b8c2d1;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.AdminPanelLogo{
+font-size: 13px;
+display: flex;align-items: center;
+}
+
+.Menulist a:hover,
+.Menulist a.active {
+    background-color: #ff7a35;
+    color: white;
+}
+
+.button{
+    width: 100%;
+border: none;
+background: transparent;
+color: #cbd5e1;
+font-size: 17px;
+padding: 15px 22px;
+display: flex;
+align-items: center;
+gap: 14px;
+cursor: pointer;
+}
+
+.button i {
+width: 20px;
+font-size: 17px;
+}
+
+.button:hover {
+color: #ffffff;
+background-color: #ff792f;
+border-radius: 6px;
+}

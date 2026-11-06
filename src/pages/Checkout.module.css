@@ -1,0 +1,927 @@
+
+/* ==============================
+   Main Container
+============================== */
+
+.CheckOutContainer {
+    max-width: 1280px;
+    width: 100%;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.CheckOutContainer * {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Main Headings
+============================== */
+
+.Checkout {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.Review {
+    color: gray;
+    font-size: 15px;
+}
+
+.FirstWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.OrderSummary {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.CartLength {
+    font-size: 17px;
+    color: gray;
+}
+
+/* ==============================
+   Delivery Form
+============================== */
+
+.DeliveryForm {
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.DeliveryHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.StepNumber {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff0e9;
+    color: #ff5100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.DeliveryInf {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.DeliveryOrder {
+    color: gray;
+    font-size: 14px;
+}
+
+.star {
+    color: brown;
+}
+
+/* ==============================
+   Form Groups
+============================== */
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: 8px;
+}
+
+.FormGroup label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.FormGroup input {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 13px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #fff;
+}
+
+.FormGroup input:focus {
+    border-color: #ff5100;
+}
+
+.FormGroup input[readonly] {
+    background-color: #f8f8f8;
+    cursor: default;
+}
+
+.FormRow {
+    display: flex;
+    gap: 18px;
+}
+
+.ErrorMessage {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ==============================
+   Payment Options
+============================== */
+
+.PaymentOptions {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.PaymentOptions .DeliveryHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.PaymentOption {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s ease,
+                background-color 0.2s ease;
+}
+
+.PaymentOption:last-child {
+    margin-bottom: 0;
+}
+
+.PaymentOption input {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    accent-color: #ff5100;
+    cursor: pointer;
+}
+
+.SelectedPayment {
+    border-color: #ff5100;
+    background: #fffaf7;
+}
+
+.PaymentIcon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #fff0e9;
+    color: #ff5722;
+    font-size: 22px;
+}
+
+.PaymentDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.PaymentDetails h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: 650;
+    color: #202a35;
+}
+
+.PaymentDetails p {
+    margin: 0;
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.DisabledPayment .PaymentIcon {
+    background: #f2f2f2;
+    color: #888;
+}
+
+.Unavailable {
+    flex-shrink: 0;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #f1f1f1;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ==============================
+   Order Summary
+============================== */
+
+.OrderSummaryWrapper {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.ProductContent {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.ProductContent img {
+    height: 65px;
+    width: 65px;
+    flex-shrink: 0;
+    object-fit: contain;
+    display: block;
+    background: #f8f8f8;
+    border-radius: 6px;
+}
+
+.CartProductDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.ProductContent h4 {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.CartProductDetails p {
+    color: gray;
+    font-size: 14px;
+}
+
+.Price {
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.Count {
+    position: absolute;
+    top: -6px;
+    left: 47px;
+    border-radius: 50%;
+    height: 18px;
+    font-size: 14px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+
+.SubTotal span {
+    font-size: 18px;
+}
+
+.SubTotal strong {
+    font-size: 19px;
+}
+
+.SummaryDelivery span {
+    font-size: 18px;
+}
+
+.SummaryDelivery strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+}
+
+.FreeOrders {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+}
+
+.OrderDetail {
+    border-bottom: 1px solid #ddd;
+}
+
+.TotalPrice span {
+    font-size: 19px;
+}
+
+.TotalPrice strong {
+    font-size: 20px;
+    color: #ff5100;
+}
+
+/* ==============================
+   Demo Note
+============================== */
+
+.DemoNote {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: #FEF3EA;
+    color: #7A4A2B;
+    padding: 18px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.DemoNote i {
+    color: #f4511e;
+    font-size: 18px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* ==============================
+   Buttons
+============================== */
+
+.DemoOrder {
+    width: 100%;
+    border: none;
+    background-color: #f4511e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 700;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.DemoOrder:hover {
+    background-color: #d94012;
+}
+
+.ReturnCart {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: grey;
+    width: fit-content;
+    margin: auto;
+}
+
+.ReturnCart::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: gray;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.ReturnCart:hover::after {
+    width: 100%;
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width: 1199.98px) {
+
+    .CheckOutContainer {
+        padding: 0 16px;
+    }
+
+    .DeliveryForm,
+    .PaymentOptions {
+        padding: 18px;
+    }
+
+    .OrderSummaryWrapper {
+        padding: 17px;
+    }
+
+    .Checkout {
+        font-size: 29px;
+    }
+
+    .OrderSummary {
+        font-size: 23px;
+    }
+
+    .ProductContent {
+        gap: 12px;
+    }
+
+    .ProductContent h4 {
+        font-size: 15px;
+    }
+
+    .Price {
+        font-size: 15px;
+    }
+
+    .SubTotal span,
+    .SummaryDelivery span {
+        font-size: 16px;
+    }
+
+    .SubTotal strong,
+    .SummaryDelivery strong {
+        font-size: 17px;
+    }
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 991.98px) {
+
+    .CheckOutContainer {
+        padding: 0 15px;
+        margin-top: 18px;
+    }
+
+    .Checkout {
+        font-size: 27px;
+    }
+
+    .FirstWrapper {
+        gap: 20px;
+    }
+
+    .OrderSummaryWrapper {
+        padding: 18px;
+    }
+
+    .DeliveryForm,
+    .PaymentOptions {
+        padding: 17px;
+    }
+
+    .OrderSummary {
+        font-size: 23px;
+    }
+
+    .PaymentOption {
+        padding: 17px;
+    }
+
+    .PaymentDetails h3 {
+        font-size: 17px;
+    }
+
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 767.98px) {
+
+    .CheckOutContainer {
+        width: 100%;
+        padding: 0 12px;
+        margin: 15px auto 25px;
+        box-sizing: border-box;
+    }
+
+    .Checkout {
+        font-size: 25px;
+    }
+
+    .Review {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .FirstWrapper {
+        gap: 17px;
+    }
+
+    .DeliveryForm {
+        padding: 15px;
+        gap: 15px;
+        border-radius: 13px;
+    }
+
+    .DeliveryInf {
+        font-size: 19px;
+    }
+
+    .DeliveryOrder {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .StepNumber {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .FormRow {
+        gap: 12px;
+    }
+
+    .FormGroup {
+        gap: 7px;
+    }
+
+    .FormGroup label {
+        font-size: 14px;
+    }
+
+    .FormGroup input {
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+
+    .PaymentOptions {
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+    .PaymentOptions .DeliveryHeader {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .PaymentOption {
+        padding: 14px;
+        gap: 11px;
+        border-radius: 11px;
+    }
+
+    .PaymentIcon {
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+    .PaymentDetails h3 {
+        font-size: 15px;
+    }
+
+    .PaymentDetails p {
+        font-size: 12px;
+    }
+
+    .Unavailable {
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+    .OrderSummaryWrapper {
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+    .OrderSummary {
+        font-size: 21px;
+    }
+
+    .CartLength {
+        font-size: 14px;
+    }
+
+    .ProductContent {
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    .ProductContent img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ProductContent h4 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .CartProductDetails p {
+        font-size: 12px;
+    }
+
+    .Price {
+        font-size: 14px;
+    }
+
+    .SubTotal span,
+    .SummaryDelivery span {
+        font-size: 15px;
+    }
+
+    .SubTotal strong,
+    .SummaryDelivery strong {
+        font-size: 15px;
+    }
+
+    .FreeOrders {
+        font-size: 13px;
+    }
+
+    .TotalPrice span {
+        font-size: 17px;
+    }
+
+    .TotalPrice strong {
+        font-size: 18px;
+    }
+
+    .DemoNote {
+        padding: 13px;
+        gap: 9px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .DemoNote i {
+        font-size: 16px;
+    }
+
+    .DemoOrder {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .ReturnCart {
+        font-size: 14px;
+    }
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .CheckOutContainer {
+        padding: 0 9px;
+    }
+
+    .Checkout {
+        font-size: 23px;
+    }
+
+    .DeliveryForm {
+        padding: 13px;
+        gap: 14px;
+    }
+
+    .DeliveryHeader {
+        gap: 10px;
+    }
+
+    .DeliveryInf {
+        font-size: 17px;
+    }
+
+    .StepNumber {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .FormRow {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .FormGroup input {
+        padding: 12px 10px;
+    }
+
+    .PaymentOptions {
+        padding: 13px;
+    }
+
+    .PaymentOption {
+        padding: 12px 10px;
+        gap: 9px;
+    }
+
+    .PaymentOption input {
+        width: 17px;
+        height: 17px;
+    }
+
+    .PaymentIcon {
+        width: 37px;
+        height: 37px;
+        font-size: 17px;
+        border-radius: 9px;
+    }
+
+    .PaymentDetails h3 {
+        font-size: 14px;
+    }
+
+    .PaymentDetails p {
+        font-size: 11px;
+    }
+
+    .Unavailable {
+        font-size: 9px;
+        padding: 5px 7px;
+    }
+
+    .OrderSummaryWrapper {
+        padding: 13px;
+    }
+
+    .OrderSummary {
+        font-size: 19px;
+    }
+
+    .CartLength {
+        font-size: 12px;
+    }
+
+    .ProductContent {
+        display: grid;
+        grid-template-columns: 55px minmax(0, 1fr) auto;
+        gap: 9px;
+        align-items: center;
+        padding: 13px 0;
+    }
+
+    .ProductContent img {
+        width: 55px;
+        height: 55px;
+        grid-column: 1;
+    }
+
+    .CartProductDetails {
+        grid-column: 2;
+        min-width: 0;
+    }
+
+    .ProductContent h4 {
+        font-size: 13px;
+    }
+
+    .CartProductDetails p {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+    .Price {
+        grid-column: 3;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .SubTotal span,
+    .SummaryDelivery span {
+        font-size: 14px;
+    }
+
+    .SubTotal strong,
+    .SummaryDelivery strong {
+        font-size: 14px;
+    }
+
+    .TotalPrice span {
+        font-size: 16px;
+    }
+
+    .TotalPrice strong {
+        font-size: 17px;
+    }
+
+    .DemoNote {
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .DemoOrder {
+        font-size: 13px;
+        padding: 12px 8px;
+    }
+
+}
+
+/* ==============================
+   Extra Small Mobile
+============================== */
+
+@media (max-width: 380px) {
+
+    .CheckOutContainer {
+        padding: 0 7px;
+    }
+
+    .Checkout {
+        font-size: 21px;
+    }
+
+    .DeliveryForm,
+    .PaymentOptions,
+    .OrderSummaryWrapper {
+        padding: 11px;
+    }
+
+    .DeliveryInf {
+        font-size: 16px;
+    }
+
+    .PaymentOption {
+        gap: 7px;
+        padding: 10px 8px;
+    }
+
+    .PaymentIcon {
+        width: 32px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .PaymentDetails h3 {
+        font-size: 13px;
+    }
+
+    .PaymentDetails p {
+        font-size: 10px;
+    }
+
+    .Unavailable {
+        font-size: 8px;
+        padding: 4px 5px;
+    }
+
+    .ProductContent {
+        grid-template-columns: 48px minmax(0, 1fr) auto;
+        gap: 7px;
+    }
+
+    .ProductContent img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .ProductContent h4 {
+        font-size: 12px;
+    }
+
+    .Price {
+        font-size: 11px;
+    }
+
+    .OrderSummary {
+        font-size: 17px;
+    }
+
+    .CartLength {
+        font-size: 11px;
+    }
+
+    .DemoNote {
+        font-size: 11px;
+        gap: 7px;
+        padding: 10px;
+    }
+
+}

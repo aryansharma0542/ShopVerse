@@ -1,0 +1,269 @@
+.blogCard{
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.blogCard img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+.reviews {
+    margin: 0;
+    font-size: 12px;
+}
+
+.rating {
+    color: #f4511e;
+}
+
+.rating i {
+    font-size: 11px;
+    margin-right: 2px;
+}
+
+.reviewCount {
+    color: #777;
+    font-size: 12px;
+}
+
+.SliderButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.SliderButton .swiper {
+flex: 1;
+min-width: 0;
+} 
+
+.SliderButton button {
+flex-shrink: 0;
+width: 50px;
+border-radius: 50%;
+height: 50px;
+}
+
+.feedbackContainer{
+padding: 10px 20px 20px 20px;
+--swiper-navigation-size: 20px;
+}
+
+.CustomerTalk{
+font-weight: 900;
+font-size: 22px;
+}
+
+.name{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.feedbackDetl{
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.feedbackContainer :global(.swiper-button-next),
+.feedbackContainer :global(.swiper-button-prev) {
+    color: #000;
+}
+
+.feedbackContainer :global(.swiper-wrapper){
+    align-items: stretch;
+}
+
+.feedbackContainer :global(.swiper-slide){
+    height: auto;
+    display: flex;
+}
+
+.feedbackContainer :global(.swiper-slide) .blogCard {
+    width: 100%;
+    height: 100%;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: transparent;
+    border: 1px solid #555;
+    border-radius: 50%;
+    color: #ccc;
+}
+
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+    font-size: 19px !important;
+}
+
+.sliderWrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 5px;
+width: 100%;
+}
+
+.sliderWrapper :global(.swiper){
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+.Buttons{
+    flex-shrink: 0;
+}
+
+.btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* First M */
+@media (max-width: 1199.98px) {
+
+.blogCard{
+    padding: 12px;
+}
+
+.feedbackContainer{
+    padding: 10px 20px 15px;
+}
+
+.blogCard img {
+width: 46px;
+height: 46px;
+}
+
+.CustomerTalk{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.feedbackDetl{
+    font-size: 11px;
+}
+
+.name{
+    font-size: 13px;
+}
+
+.rating i {
+    font-size: 10px;
+}
+}
+
+/* Second M */
+@media (max-width: 991.98px) {
+
+.CustomerTalk{
+    font-size: 19px !important;
+}
+
+.feedbackContainer{
+    padding: 5px 15px 10px;
+}
+
+.blogCard{
+    padding: 10px;
+}
+}
+
+/* Third M */
+@media (max-width: 767.98px) {
+
+.CustomerTalk{
+    font-size: 19px !important;
+}
+
+.feedbackContainer{
+    padding: 5px 12px 15px;
+}
+}
+
+/* Fourth M */
+@media (max-width: 575.98px) {
+
+.feedbackContainer{
+padding: 10px 8px;
+}   
+
+.blogCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: auto;
+    height: auto;
+    padding: 10px;
+    gap: 8px;
+}
+
+.blogCard img {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.name {
+font-size: 12px;
+margin: 0;
+}
+
+.ratingBox {
+    font-size: 8px;
+    justify-content: center;
+    margin: 4px 0px;
+}
+
+.feedbackDetl {
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.CustomerTalk {
+    font-size: 17px;
+    font-weight: 700;
+}
+}
+
+/* Fifth M */
+@media (max-width: 575.98px) {
+
+.CustomerTalk{
+    font-size: 16px !important;
+}
+
+.blogCard{
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    gap: 5px;
+    display: flex !important;
+    align-items: center;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.ratingBox{
+margin: 4px 0px !important;
+}
+}

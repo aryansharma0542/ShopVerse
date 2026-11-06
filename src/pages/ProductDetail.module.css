@@ -1,0 +1,302 @@
+.BreadCrumb{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.BreadCrumb i {
+    font-size: 10px;
+}
+
+.CurrentProduct{
+    color: black;
+    font-weight: 700;
+}
+
+
+
+.ThumbNails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 100%;
+}
+
+.DetailPageContainer{
+padding: 10px 20px;
+}
+
+.InStock{
+background-color: #f4511e;
+padding: 1px 3px;
+font-size: 14px;
+color: #fff;
+display: inline-block;
+}
+
+
+.OptionGroups h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.OptionsButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.OptionButton{
+    min-width: 45px;
+    padding: 9px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.OptionButton:hover,
+.selectedOptions {
+border-color: #f4511e;
+color: #f4511e;
+background-color: #fff1ec;
+}
+
+.ProductOptions{
+margin-top: 20px;
+}
+
+.MainImage{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.para{
+    font-size: 14px;
+    color: gray;
+}
+
+.Discount{
+    font-size: 18px;
+background-color: #FFF1EC;
+color: #F4511E;
+border-radius: 3px;
+padding: 6px 18px;
+font-weight: bold;
+
+}
+
+
+.ThumNailBox{
+width: 85px;
+height: 85px;
+border: 1px solid #e5e5e5;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+cursor: pointer;
+}
+
+.ThumNailBox:first-child{
+border: 2px solid #f4511e;
+}
+
+.ThumNailImage{
+width: 100%;
+height: 100%;
+object-fit: contain;
+} 
+
+.ProductsDetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.productDetail {
+    width: 100%;
+}
+
+.ActionButtons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+
+
+.ProductImage{
+    height: 450px;
+    min-height: 500px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: flex;
+    background-color: #fafafa;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.DiscountBadge{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #f4511e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.MainImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Wishlist{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background-color: white;
+  color: #f4511e;
+  font-size: 17px;
+}
+
+.productName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 8px 0;
+}
+
+.ProductCategory {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+/* Rating */
+.RatingBox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+
+.PriceBox {
+    width: 100%;
+}
+
+.Stars {
+    color: #f4511e;
+    font-size: 15px;
+}
+
+.Reviews {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+.OldPrice {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.Off {
+    font-size: 14px;
+    color: #f4511e;
+    background-color: #fff1ec;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.Saving {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: 14px;
+    color: #25834b;
+}
+
+.Description {
+    flex-basis: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin: 8px 0 12px;
+}
+
+.AddToCartButton , 
+.BuyButton{
+        width: 100%;
+    padding: 11px 20px;
+    margin-top: 8px;
+    border: 1px solid #ff501a;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.AddToCartButton{
+  background-color: #ff501a;
+  color: white;
+}
+
+.BuyButton{
+  background-color: white;
+  color: #ff501a;
+}
+
+.BuyButton:hover {
+  background-color: #ff501a;
+  color: white;
+}
+
+.AddToCartButton:hover {
+       background-color: #e94310;;
+}
+
+.AddToCartButton:active {
+    transform: scale(0.98);
+}
+
+.ProductRow {
+    align-items: stretch;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ProductRow > div {
+    min-width: 0;
+}

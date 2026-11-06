@@ -1,0 +1,613 @@
+
+/* ==============================
+   Main Container
+============================== */
+
+.ContainerFluid {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow-x: hidden;
+    background-image: url('../assets/2315b729-1248-4b27-896f-8aaf23c205dd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    box-sizing: border-box;
+}
+
+.ContainerFluid > :global(.row) {
+    min-height: 100vh;
+    min-height: 100svh;
+    margin: 0;
+}
+
+/* ==============================
+   Right Side Column
+============================== */
+
+.ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Wrapper
+============================== */
+
+.Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+}
+
+/* ==============================
+   Signup Card
+============================== */
+
+.Card {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Logo & Login
+============================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+}
+
+.ImageOne {
+    width: min(150px, 42%);
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.AllreadyAccountOne {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: gray;
+    text-decoration: none;
+    text-align: right;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.LoginOne {
+    color: #f4511e;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Mobile login link hidden by default */
+
+.AllreadyAccountTwo {
+    display: none;
+}
+
+/* ==============================
+   Heading
+============================== */
+
+.CreateAccount {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.para {
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ==============================
+   Form Fields
+============================== */
+
+.formGroup {
+    margin-bottom: 13px;
+    min-width: 0;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.inputBox:focus-within {
+    border-color: #f4511e;
+}
+
+.inputBox input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.inputBox input::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+.inputBox i {
+    flex: 0 0 auto;
+    color: #999;
+    font-size: 14px;
+}
+
+/* ==============================
+   Terms & Conditions
+============================== */
+
+.Terms {
+    display: flex;
+    align-items: flex-start !important;
+    gap: 8px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.Terms input {
+    flex: 0 0 auto;
+    margin-top: 3px;
+    accent-color: #f4511e;
+    cursor: pointer;
+}
+
+.Terms label {
+    min-width: 0;
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+.Terms a {
+    color: #f4511e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ==============================
+   Signup Button
+============================== */
+
+.SignUpButton {
+    width: 100%;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5a00;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.SignUpButton:hover {
+    background-color: #e64a00;
+}
+
+/* ==============================
+   OR Divider
+============================== */
+
+.Or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.Or span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.Or p {
+    margin-bottom: 0;
+    color: #888;
+    font-size: 11px;
+}
+
+/* ==============================
+   Social Buttons
+============================== */
+
+.SocialButtons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+}
+
+.SocialButtons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 50%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+.SocialButtons button:hover {
+    background-color: #f8f8f8;
+}
+
+.SocialButtons svg {
+    flex: 0 0 auto;
+}
+
+/* ==============================
+   Login Link
+============================== */
+
+.LoginTwo {
+    color: #f4511e;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ShopVerseHeading {
+    color: #f4511e;
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width: 1199.98px) {
+
+    .Card {
+        max-width: 480px;
+        padding: 26px;
+    }
+
+    .CreateAccount {
+        font-size: 24px;
+    }
+
+    .ImageOne {
+        width: min(135px, 42%);
+    }
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 991.98px) {
+
+    /* Hide Left Panel */
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):first-child {
+        display: none !important;
+    }
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+        padding: 25px;
+    }
+
+    .Card {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+}
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 767.98px) {
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 20px;
+    }
+
+    .Card {
+        max-width: 480px;
+        padding: 26px;
+    }
+
+    .CreateAccount {
+        font-size: 23px;
+    }
+
+    .formGroup {
+        margin-bottom: 12px;
+    }
+
+    .inputBox {
+        min-height: 43px;
+    }
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .ContainerFluid {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 16px;
+        min-height: 100svh;
+        align-items: center;
+    }
+
+    .Wrapper {
+        width: 100%;
+    }
+
+    .Card {
+        max-width: 100%;
+        padding: 24px 20px;
+        border-radius: 10px;
+    }
+
+    .logo {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .ImageOne {
+        width: 120px;
+    }
+
+    /* Switch Login Link */
+
+    .AllreadyAccountOne {
+        display: none;
+    }
+
+    .AllreadyAccountTwo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        color: gray;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .CreateAccount {
+        font-size: 22px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+    .formGroup label {
+        font-size: 14px;
+    }
+
+    .inputBox input {
+        font-size: 13px;
+    }
+
+    .Terms {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .SignUpButton {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .Or {
+        margin: 17px 0;
+    }
+
+    /* Stack Social Buttons */
+
+    .SocialButtons {
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .SocialButtons button {
+        width: 100%;
+        min-height: 43px;
+        font-size: 13px;
+    }
+
+}
+
+/* ==============================
+   Extra Small Mobile
+============================== */
+
+@media (max-width: 400.98px) {
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 12px;
+    }
+
+    .Card {
+        padding: 22px 16px;
+    }
+
+    .ImageOne {
+        width: 105px;
+    }
+
+    .CreateAccount {
+        font-size: 21px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .formGroup {
+        margin-bottom: 11px;
+    }
+
+    .formGroup label {
+        font-size: 13px;
+    }
+
+    .inputBox {
+        min-height: 41px;
+        padding: 0 9px;
+        gap: 7px;
+    }
+
+    .inputBox input {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+
+    .inputBox input::placeholder {
+        font-size: 11px;
+    }
+
+    .Terms {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .AllreadyAccountTwo {
+        font-size: 13px;
+    }
+
+}
+
+/* ==============================
+   320px Devices
+============================== */
+
+@media (max-width: 340.98px) {
+
+    .ContainerFluid > :global(.row) > :global(.col-lg-6):last-child {
+        padding: 9px;
+    }
+
+    .Card {
+        padding: 20px 13px;
+    }
+
+    .logo {
+        gap: 7px;
+    }
+
+    .ImageOne {
+        width: 95px;
+    }
+
+    .CreateAccount {
+        font-size: 19px;
+    }
+
+    .para {
+        font-size: 11px;
+    }
+
+    .formGroup label {
+        font-size: 12px;
+    }
+
+    .inputBox {
+        min-height: 39px;
+        gap: 6px;
+        padding: 0 8px;
+    }
+
+    .inputBox i {
+        font-size: 12px;
+    }
+
+    .inputBox input {
+        font-size: 11px;
+    }
+
+    .Terms {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .SocialButtons button {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+}

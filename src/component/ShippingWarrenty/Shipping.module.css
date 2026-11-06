@@ -1,0 +1,232 @@
+
+/* Main Container */
+.ShippingContainer {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Main Grid */
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Individual Box */
+.policyCol {
+    min-width: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Shipping Content */
+.AllShipping {
+    min-height: 160px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 10px;
+    gap: 8px;
+}
+
+/* Image */
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.PolicyImage {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Details */
+.detalis {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.para {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+@media (max-width: 1199.98px) {
+
+    .heading {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .ShippingContainer {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+}
+
+
+@media (max-width: 991.98px) {
+
+        .heading {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+    
+}
+
+
+/* Tablet - 3 Columns */
+@media (max-width: 767.98px) {
+
+    .ShippingContainer {
+        padding: 12px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    /* Fourth box center */
+    .policyCol:last-child {
+        grid-column: 2;
+    }
+
+    .AllShipping {
+        min-height: 150px;
+        padding: 12px 5px;
+        gap: 6px;
+    }
+
+    .PolicyImage {
+        width: 55px;
+        height: 55px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+}
+
+/* Mobile - General */
+@media (max-width: 575.98px) {
+
+    .ShippingContainer {
+        padding: 10px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .AllShipping {
+        min-height: 135px;
+        padding: 10px 4px;
+        gap: 5px;
+    }
+
+    .PolicyImage {
+        width: 45px;
+        height: 45px;
+    }
+
+    .heading {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .para {
+        font-size: 11px;
+        line-height: 1.35;
+    }
+}
+
+/* Small Mobile - 2 Columns */
+@media (max-width: 400px) {
+
+    .ShippingContainer {
+        padding: 8px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    /* Reset fourth box centering */
+    .policyCol:last-child {
+        grid-column: auto;
+    }
+
+    .AllShipping {
+        min-height: 130px;
+        padding: 10px 5px;
+        gap: 5px;
+    }
+
+    .PolicyImage {
+        width: 42px;
+        height: 42px;
+    }
+
+    .heading {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .para {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 340px) {
+
+    .AllShipping {
+        min-height: 115px;
+        padding: 6px 2px;
+        gap: 4px;
+    }
+
+    .PolicyImage {
+        width: 34px;
+        height: 34px;
+    }
+
+    .heading {
+        font-size: 11px;
+    }
+
+    .para {
+        font-size: 9px;
+    }
+}

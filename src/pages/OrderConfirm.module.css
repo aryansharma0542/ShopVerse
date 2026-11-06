@@ -1,0 +1,849 @@
+
+/* ==============================
+   Main Container
+============================== */
+
+.OrderConfirmContainer {
+    max-width: 1280px;
+    width: 100%;
+    margin: 40px auto 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.OrderConfirmContainer * {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   Confirmation Header
+============================== */
+
+.ConfirmOrder {
+    margin-bottom: 30px;
+}
+
+.ConfirmOrder i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 65px;
+    width: 65px;
+    background-color: #E8F7EF;
+    color: #008000;
+    border-radius: 50%;
+}
+
+.ConfirmOrder h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.FrontEnd {
+    color: #F72555;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.DemoOrder {
+    font-size: 17px;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ==============================
+   Main Details Card
+============================== */
+
+.OrderConfirmDtails {
+    width: 100%;
+    padding: 27px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+/* ==============================
+   Order Reference
+============================== */
+
+.RefDetailsOne {
+    border-bottom: 1px solid #ddd;
+    gap: 15px;
+}
+
+.DemoRef {
+    font-size: 15px;
+    color: gray;
+}
+
+.OrderRefNumber {
+    font-size: 19px;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.CashOnDelivery {
+    background-color: #FFF0E8;
+    color: #C2410C;
+    font-weight: 700;
+    padding: 10px 22px;
+    font-size: 16px;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+/* ==============================
+   Delivery Address & Total
+============================== */
+
+.OrderTotal{
+font-size: 21px !important;
+font-weight: 600;
+}
+
+.RefDetailsTwo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 48px;
+    row-gap: 25px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.RefDetailsTwo > .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.RefDetailsTwo > * {
+    min-width: 0;
+}
+
+.FirstDeliveryAddress,
+.SecondPaymentOrderDetails {
+    width: 100%;
+    min-width: 0;
+}
+
+
+ .FirstDeliveryAddress {
+    overflow-wrap: anywhere;
+    border: 1px solid lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.FirstDeliveryAddress h5 {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.FirstDeliveryAddress h6 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.FirstDeliveryAddress p {
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.SecondPaymentOrderDetails {
+    width: 100%;
+    min-width: 0;
+}
+
+.SecondPaymentOrderDetails h4 {
+    font-size: 25px;
+}
+
+.OrderDetail {
+    width: 100%;
+}
+
+.SubTotal,
+.SummaryDelivery,
+.TotalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.SubTotal span {
+    font-size: 17px;
+}
+
+.SubTotal strong {
+    font-size: 17px;
+}
+
+.SummaryDelivery span,
+.SummaryDelivery strong {
+    font-size: 17px;
+}
+
+.Total {
+    color: black;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.TotalAmount {
+    font-size: 20px;
+    color: #F72555;
+    font-weight: 900;
+}
+
+.TotalPrice {
+    border-top: 1px solid #ddd;
+}
+
+/* ==============================
+   Products Section
+============================== */
+
+.RefDetailsThree {
+    width: 100%;
+}
+
+.RefDetailsThree h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.ItemsOrder {
+    font-size: 24px !important;
+    font-weight: 900;
+}
+
+.ProductDetails {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-top: 1px solid lightgray;
+    min-width: 0;
+}
+
+.ProductDetails img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    flex-shrink: 0;
+    background: #f8f8f8;
+}
+
+.OrderItemDetails {
+    flex: 1;
+    min-width: 0;
+}
+
+.OrderItemDetails h5 {
+    font-size: 19px;
+    margin: 0 0 4px;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.OrderItemDetails p {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+.ItemPrice {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* ==============================
+   Demo Information
+============================== */
+
+.FrontEndDemonstration {
+    font-size: 18px;
+    background-color: #FFF0E8;
+    color: #C2410C;
+    padding: 16px 12px;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+/* ==============================
+   Continue Shopping
+============================== */
+
+.ContinueShopping {
+    width: 100%;
+    border: none;
+    background-color: #f4511e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 700;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.ContinueShopping:hover {
+    background-color: #e64a19;
+    color: white;
+}
+
+/* ==============================
+   Laptop
+============================== */
+
+@media (max-width: 1199.98px) {
+
+    .OrderRefNumber {
+        font-size: 18px;
+    }
+
+    .OrderConfirmContainer {
+        padding: 0 16px;
+    }
+
+    .OrderConfirmDtails {
+        padding: 23px;
+    }
+
+    .ConfirmOrder h1 {
+        font-size: 38px;
+    }
+
+    .DemoOrder {
+        font-size: 17px;
+    }
+
+    .ProductDetails img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .OrderItemDetails h5 {
+        font-size: 17px;
+    }
+
+    .ItemPrice {
+        font-size: 18px;
+    }
+
+.RefDetailsTwo {
+    column-gap: 35px;
+}    
+
+.FrontEndDemonstration{
+    font-size: 16px;
+}
+
+}
+
+/* ==============================
+   Tablet
+============================== */
+
+@media (max-width: 991.98px) {
+
+    .OrderConfirmContainer {
+        margin: 30px auto 50px;
+        padding: 0 15px;
+    }
+
+    .ConfirmOrder h1 {
+        font-size: 34px;
+    }
+
+.RefDetailsTwo{
+    align-items: center;
+}
+
+    .DemoOrder {
+        font-size: 16px;
+    }
+
+    .OrderConfirmDtails {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .CashOnDelivery {
+        font-size: 14px;
+        padding: 10px 17px;
+    }
+
+    .FirstDeliveryAddress h5 {
+        font-size: 19px;
+    }
+
+    .FirstDeliveryAddress p {
+        font-size: 15px;
+    }
+
+    .SecondPaymentOrderDetails h4 {
+        font-size: 22px;
+    }
+
+    .ProductDetails img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .ItemsOrder {
+        font-size: 22px !important;
+    }
+
+    .OrderTotal{
+font-size: 19px !important;
+font-weight: 600;
+}
+
+.SubTotal span {
+    font-size: 16px;
+}
+
+.SubTotal strong{
+    font-size: 16px;
+}
+
+.SummaryDelivery span {
+    font-size: 16px;
+}
+
+.SummaryDelivery strong{
+    font-size: 16px;
+}
+
+.Total{
+    font-size: 20px;
+}
+
+
+}
+
+
+/* ==============================
+   Mobile
+============================== */
+
+@media (max-width: 767.98px) {
+
+    .OrderConfirmContainer {
+        width: 100%;
+        padding: 0 12px;
+        margin: 25px auto 35px;
+    }
+
+.SecondPaymentOrderDetails {
+    width: 100%;
+    min-width: 0;
+}
+
+    .CashOnDelivery {
+    max-width: 48%;
+    white-space: normal;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 10px;
+    margin-bottom: 0;
+}
+
+    .ConfirmOrder {
+        margin-bottom: 22px;
+    }
+
+    .ConfirmOrder i {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .ConfirmOrder h1 {
+        font-size: 29px;
+        margin-bottom: 8px;
+    }
+
+    .FrontEnd {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .DemoOrder {
+        font-size: 15px;
+        padding: 0 5px;
+        line-height: 1.5;
+    }
+
+    .OrderConfirmDtails {
+        padding: 14px;
+        border-radius: 13px;
+    }
+
+    /* Reference */
+
+.RefDetailsOne {
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-bottom: 15px !important;
+}
+
+    .DemoRef {
+        font-size: 13px;
+    }
+
+    .OrderRefNumber {
+        font-size: 16px;
+    }
+
+
+    /* Address and Order Total */
+
+    .RefDetailsTwo {
+        flex-direction: column;
+        padding: 17px 0 !important;
+        gap: 15px;
+    }
+
+    .RefDetailsTwo > * {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+.FirstDeliveryAddress {
+    width: 100%;
+    min-width: 0;
+    padding: 10px !important;
+}
+
+    .FirstDeliveryAddress h5 {
+        font-size: 17px;
+    }
+
+    .FirstDeliveryAddress h6 {
+        font-size: 14px;
+    }
+
+    .FirstDeliveryAddress p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .SecondPaymentOrderDetails h4 {
+        font-size: 21px;
+    }
+
+    .SubTotal span,
+    .SubTotal strong,
+    .SummaryDelivery span,
+    .SummaryDelivery strong {
+        font-size: 13px;
+    }
+
+    .Total {
+        font-size: 16px;
+    }
+
+    .TotalAmount {
+        font-size: 15.5px;
+    }
+
+    /* Products */
+
+    .RefDetailsThree {
+        padding: 15px 0 !important;
+    }
+
+    .ItemsOrder {
+        font-size: 20px !important;
+        padding: 10px 0 15px !important;
+    }
+
+    .ProductDetails {
+        gap: 11px;
+        padding: 13px 0;
+    }
+
+    .ProductDetails img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .OrderItemDetails h5 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .OrderItemDetails p {
+        font-size: 13px;
+    }
+
+    .ItemPrice {
+        font-size: 15px;
+    }
+
+    .RefDetailsTwo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 18px;
+    row-gap: 0;
+    align-items: center;
+    padding: 17px 0 !important;
+}
+
+    /* Demo Note */
+
+    .FrontEndDemonstration {
+        font-size: 14px;
+        padding: 13px 10px;
+        line-height: 1.5;
+        border-radius: 12px;
+    }
+
+    .ContinueShopping {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+    .OrderTotal{
+        font-size: 17px !important;
+    }
+
+.RefDetailsOne > div {
+    flex: 1;
+    min-width: 0;
+}
+
+}
+
+/* ==============================
+   Small Mobile
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .OrderConfirmContainer {
+        padding: 0 9px;
+        margin: 20px auto 30px;
+    }
+
+    .ConfirmOrder h1 {
+        font-size: 25px;
+    }
+
+    .OrderTotal{
+        font-size: 16px !important;
+    }
+
+    .DemoOrder {
+        font-size: 14px;
+    }
+
+    .OrderConfirmDtails {
+        padding: 13px;
+    }
+
+    .CashOnDelivery {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+
+.DemoRef{
+    font-size: 12px;
+}
+
+    .FirstDeliveryAddress h5 {
+        font-size: 16px;
+    }
+
+    .SecondPaymentOrderDetails h4 {
+        font-size: 19px;
+    }
+
+    .ProductDetails {
+        display: grid;
+        grid-template-columns: 62px minmax(0, 1fr) auto;
+        gap: 9px;
+        align-items: center;
+    }
+
+    .ProductDetails img {
+        width: 62px;
+        height: 65px;
+        grid-column: 1;
+    }
+
+    .OrderItemDetails {
+        grid-column: 2;
+        min-width: 0;
+    }
+
+    .OrderItemDetails h5 {
+        font-size: 13px;
+    }
+
+    .OrderItemDetails p {
+        font-size: 11px;
+    }
+
+    .ItemPrice {
+        grid-column: 3;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .ItemsOrder {
+        font-size: 18px !important;
+    }
+
+    .FrontEndDemonstration {
+        font-size: 12px;
+        padding: 11px;
+    }
+
+    .OrderRefNumber {
+        font-size: 15px;
+    }
+
+}
+
+
+
+/*  */
+
+@media (max-width: 400.98px) {
+
+    .RefDetailsTwo {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 15px;
+        align-items: stretch;
+    }
+
+    .FirstDeliveryAddress,
+    .SecondPaymentOrderDetails {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .CashOnDelivery{
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .OrderRefNumber{
+        font-size: 14px;
+    }
+
+    .DemoOrder{
+        font-size: 13px;
+    }
+
+    .ItemsOrder{
+        font-size: 17px !important;
+    }
+}
+
+/* ==============================
+   Extra Small Mobile
+============================== */
+
+@media (max-width: 380.98px) {
+
+    .OrderConfirmContainer {
+        padding: 0 7px;
+    }
+
+    .ConfirmOrder h1 {
+        font-size: 22px;
+    }
+
+    .OrderConfirmDtails {
+        padding: 11px;
+    }
+
+    .OrderRefNumber {
+        font-size: 13px;
+    }
+
+  .CashOnDelivery {
+        width: 43%;
+        max-width: 43%;
+        flex: 0 0 43%;
+        font-size: 10px;
+        line-height: 1.4;
+        padding: 8px 5px;
+        text-align: center;
+        white-space: normal;
+        text-wrap: balance;
+        border-radius: 25px;
+    }
+
+    .ProductDetails {
+        grid-template-columns: 52px minmax(0, 1fr) auto;
+        gap: 7px;
+    }
+
+    .ProductDetails img {
+        width: 52px;
+        height: 55px;
+    }
+
+    .OrderItemDetails h5 {
+        font-size: 12px;
+    }
+
+    .OrderItemDetails p {
+        font-size: 10px;
+    }
+
+    .ItemPrice {
+        font-size: 11px;
+    }
+
+    .TotalAmount {
+        font-size: 17px;
+    }
+
+    .FrontEndDemonstration {
+        font-size: 11px;
+    }
+
+    .CashOnDelivery{
+        padding: 8px;
+    }
+
+    .DemoRef{
+        font-size: 11px;
+    }
+
+}

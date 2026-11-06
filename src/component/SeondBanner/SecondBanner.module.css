@@ -1,0 +1,356 @@
+.bannerCard{
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.DiscountTwo {
+color: #f4511e;
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.DiscountThree {
+color: #2F64A3;
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.SecondBackImgOne,
+.SecondBackImgTwo,
+.SecondBackImgThree {
+display: flex;
+}
+
+.SecondBackImgOne > :global(.row),
+.SecondBackImgTwo > :global(.row),
+.SecondBackImgThree > :global(.row) {
+width: 100%;
+}
+
+.SecondBannerContent {
+height: 100%;
+min-height: 0;
+}
+
+.SecondBannerContent {
+padding: 20px 12px;
+min-height: 180px;
+}
+
+.SecondBannerContainer{
+padding: 10px 20px;
+}
+
+.Discount,
+.DiscountTwo,
+.DiscountThree {
+font-size: 12px;
+}
+
+.MegaSale {
+font-size: 17px;
+margin-bottom: 4px !important;
+}
+
+.shopNow{
+color: white;
+background-color: #5B2D9A;
+padding: 10px 30px;
+text-decoration: none;
+border-radius: 4px;
+display: inline-block;
+}
+
+.DealsBrands {
+font-size: 13px;
+margin-bottom: 8px;
+}
+
+.shopNowTwo{
+color: white;
+background-color: #f4511e;
+padding: 10px 30px;
+text-decoration: none;
+border-radius: 4px;
+display: inline-block;
+}
+
+.shopNowThree{
+color: white;
+background-color: #2F64A3;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 4px;
+display: inline-block;
+}
+
+.SecondBackImgOne{
+background: url(../../assets/9ebc3660-bb7c-4f88-a8ec-402a302e4234.png);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px;
+height: 100%;
+background-position: center;
+}
+
+.SecondBackImgTwo{
+background: url(../../assets/397ac284-dc49-4dff-9a9a-4bda8dd5fd65.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+height: 100%;
+}
+
+.SecondBackImgThree{
+background: url(../../assets/f9173911-ccb7-424a-98c4-8ac6db34bfa2.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+height: 100%;
+}
+
+/* First M */
+@media (max-width: 1199.98px) {
+
+.SecondBannerContent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 8px;
+}
+
+.DealsBrands{
+font-size: 11px;
+}
+
+.MegaSale{
+font-size: 14px;
+}
+
+.shopNow ,
+.shopNowTwo , 
+.shopNowThree {
+display: inline-block !important;
+width: fit-content !important;
+align-self: flex-start;
+padding: 6px 18px;
+font-size: 13px;
+}
+
+.SecondBackImgOne{
+background-position: right center;
+}
+
+.SecondBackImgTwo{
+background-position: 70% center;
+}
+
+.SecondBackImgThree{
+background-position: right center;
+}
+}
+
+/* Second M */
+@media (max-width: 991.98px) {
+
+.SecondBannerContainer{
+padding: 8px 15px 10px;
+}
+
+.Discount , 
+.DiscountTwo , 
+.DiscountThree{
+font-size: 16px;
+}
+
+.MegaSale{
+font-size: 16px;
+}
+
+.shopNow , 
+.shopNowTwo , 
+.shopNowThree{
+padding: 9px 20px;
+}
+
+.DealsBrands{
+font-size: 14px;
+}
+
+.SecondBannerContent{
+padding: 8px 10px;
+}
+}
+
+/* Third M */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+.SecondBannerContainer{
+padding: 10px 12px;
+}
+
+.SecondBannerContent{
+padding: 8px 21px;
+}
+
+.SecondBackImgOne,
+.SecondBackImgTwo,
+.SecondBackImgThree {
+height: auto;
+aspect-ratio: 3 / 1;
+background-size: cover;
+background-position: right center;
+}
+
+.SecondBackImgTwo {
+background-position: 70% center;
+}
+
+.SecondBackImgOne,
+.SecondBackImgTwo,
+.SecondBackImgThree {
+display: flex;
+}
+
+.SecondBackImgOne > :global(.row),
+.SecondBackImgTwo > :global(.row),
+.SecondBackImgThree > :global(.row) {
+width: 100%;
+}
+
+.SecondBannerContent {
+height: 100%;
+min-height: 0;
+}
+
+.MegaSale{
+font-size: 18px;
+}
+
+.DealsBrands{
+font-size: 14px;
+}
+
+.shopNow , 
+.shopNowTwo , 
+.shopNowThree{
+padding: 10px 21px;
+}
+
+.Discount , 
+.DiscountTwo , 
+.DiscountThree{
+font-size: 16px;
+}
+}
+
+/* Fourth M */
+@media (max-width: 575.98px) {
+
+.SecondBannerContainer {
+padding: 10px 8px !important;
+}
+
+.SecondBannerPadd {
+margin-bottom: 10px;
+}
+
+.SecondBannerContent {
+padding: 12px;
+max-width: 50%;
+min-height: 190px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.SecondBackImgOne,
+.SecondBackImgTwo,
+.SecondBackImgThree {
+background-position: right center;
+}
+
+.Discount,
+.DiscountTwo,
+.DiscountThree {
+font-size: 12px;
+margin-bottom: 4px;
+}
+
+.Discount {
+color: #5B2D9A;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+.MegaSale {
+font-weight: 700;
+font-size: 17px;
+margin-bottom: 4px !important;
+}
+
+.DealsBrands {
+font-size: 13px;
+margin-bottom: 8px;
+}
+
+.shopNow,
+.shopNowTwo,
+.shopNowThree {
+padding: 6px 18px;
+font-size: 13px;
+align-self: flex-start;
+}
+}
+
+/* Fifth M */
+@media (max-width: 400.98px) {
+
+.SecondBannerContent{
+padding: 10px;
+}
+    
+.MegaSale{
+font-size: 14px;
+}
+
+.DealsBrands{
+font-size: 11px;
+}
+
+.shopNow , 
+.shopNowTwo , 
+.shopNowThree {
+padding: 5px 15px;
+}
+
+.SecondBackImgOne{
+background-position: 90%  center;
+}
+
+.SecondBackImgTwo {
+background-position: 70% center;
+}
+}
+
+/* Sixth M */
+@media (max-width: 340px) {
+
+.MegaSale{
+font-size: 13px;
+}
+
+.DealsBrands{
+font-size: 10px;
+}
+
+.shopNow , 
+.shopNowTwo , 
+.shopNowThree {
+    padding: 5px 13px;
+}}
